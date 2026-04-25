@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://verifiedexpatsuppliers.com/sitemap.xml
