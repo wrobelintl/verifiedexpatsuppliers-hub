@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verified Expat Suppliers — Find Trusted Local Experts Abroad</title>
+  <meta name="description" content="Find verified local suppliers when buying property or moving abroad. Immigration lawyers, tax advisors, buyer agents, healthcare and more. Spain, Portugal, France, Italy, Mexico.">
+  <meta name="keywords" content="expat suppliers, moving abroad, buy property spain, expat lawyers, relocation services, verified professionals abroad">
+  <link rel="canonical" href="https://verifiedexpatsuppliers.com/">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --gold: #f59e0b; --dark: #0f172a; --mid: #1e293b; --blue: #2563eb; --green: #059669; --gray: #64748b; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--dark); color: #e2e8f0; min-height: 100vh; }
+
+    /* HEADER */
+    header { background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%); border-bottom: 2px solid var(--gold); padding: 1.25rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.6rem; font-weight: 800; color: white; }
+    header h1 span { color: var(--gold); }
+    header p { color: #94a3b8; font-size: 0.9rem; margin-top: 0.35rem; }
+
+    /* HERO */
+    .hero { text-align: center; padding: 4rem 1.5rem 3rem; }
+    .hero h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; line-height: 1.2; margin-bottom: 1rem; }
+    .hero h2 em { font-style: normal; color: var(--gold); }
+    .hero p { color: #94a3b8; font-size: 1rem; max-width: 560px; margin: 0 auto 2.5rem; line-height: 1.6; }
+
+    /* COUNTRY GRID */
+    .country-section { max-width: 1000px; margin: 0 auto; padding: 0 1.5rem 4rem; }
+    .section-label { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); margin-bottom: 1.25rem; text-align: center; }
+    .country-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+    .country-card { background: #1e293b; border: 1px solid #334155; border-radius: 14px; padding: 2rem 1.5rem; text-align: center; text-decoration: none; color: white; transition: all 0.2s; cursor: pointer; }
+    .country-card:hover { border-color: var(--gold); background: #1a1a0f; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(245,158,11,0.15); }
+    .country-flag { font-size: 3rem; margin-bottom: 0.75rem; display: block; }
+    .country-name { font-size: 1.1rem; font-weight: 800; margin-bottom: 0.35rem; }
+    .country-sub { font-size: 0.78rem; color: #64748b; line-height: 1.5; }
+    .country-badge { display: inline-block; background: var(--green); color: white; font-size: 0.65rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 99px; margin-top: 0.5rem; }
+    .country-badge.soon { background: #334155; color: #64748b; }
+
+    /* HOW IT WORKS */
+    .how { background: #1e293b; border-top: 1px solid #334155; border-bottom: 1px solid #334155; padding: 3rem 1.5rem; text-align: center; }
+    .how h3 { font-size: 1.2rem; font-weight: 800; color: white; margin-bottom: 2rem; }
+    .steps { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; max-width: 800px; margin: 0 auto; }
+    .step { flex: 1; min-width: 180px; max-width: 220px; }
+    .step-num { width: 40px; height: 40px; border-radius: 50%; background: var(--gold); color: var(--dark); font-size: 1rem; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem; }
+    .step-title { font-size: 0.9rem; font-weight: 700; color: white; margin-bottom: 0.35rem; }
+    .step-sub { font-size: 0.8rem; color: #64748b; line-height: 1.5; }
+
+    /* CATEGORIES */
+    .categories { max-width: 900px; margin: 3rem auto; padding: 0 1.5rem; text-align: center; }
+    .cat-grid { display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; margin-top: 1rem; }
+    .cat-pill { background: #1e293b; border: 1px solid #334155; border-radius: 99px; padding: 0.45rem 1rem; font-size: 0.82rem; color: #94a3b8; }
+
+    /* ARE YOU A SUPPLIER */
+    .supplier-cta { background: linear-gradient(135deg, #1e3a5f, #0f172a); border: 1px solid var(--gold); border-radius: 14px; padding: 2.5rem; text-align: center; max-width: 700px; margin: 0 auto 3rem; }
+    .supplier-cta h3 { font-size: 1.2rem; font-weight: 800; color: white; margin-bottom: 0.5rem; }
+    .supplier-cta p { color: #94a3b8; font-size: 0.9rem; margin-bottom: 1.25rem; line-height: 1.6; }
+    .supplier-form { display: flex; gap: 0.6rem; justify-content: center; flex-wrap: wrap; }
+    .supplier-form input { padding: 0.7rem 1rem; border-radius: 8px; border: 1.5px solid #334155; background: #0f172a; color: white; font-size: 0.9rem; min-width: 220px; outline: none; }
+    .supplier-form button { background: var(--gold); color: var(--dark); border: none; padding: 0.7rem 1.5rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700; cursor: pointer; }
+
+    footer { text-align: center; padding: 1.5rem; color: #475569; font-size: 0.8rem; border-top: 1px solid #1e293b; }
+    footer a { color: #475569; margin: 0 0.5rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Verified <span>Expat</span> Suppliers</h1>
+  <p>Find trusted local professionals when buying property or moving abroad</p>
+</header>
+
+<section class="hero">
+  <h2>Where are you<br><em>buying or moving?</em></h2>
+  <p>Select your destination country to find verified local lawyers, tax advisors, buyer agents, healthcare providers, and more.</p>
+</section>
+
+<section class="country-section">
+  <div class="section-label">Select Your Destination</div>
+  <div class="country-grid">
+    <a class="country-card" href="https://spain.verifiedexpatsuppliers.com">
+      <span class="country-flag">🇪🇸</span>
+      <div class="country-name">Spain</div>
+      <div class="country-sub">Most popular expat destination. 155,000+ foreign property purchases per year.</div>
+      <span class="country-badge">Live</span>
+    </a>
+    <div class="country-card" style="opacity:0.6">
+      <span class="country-flag">🇵🇹</span>
+      <div class="country-name">Portugal</div>
+      <div class="country-sub">Golden visa program. Algarve, Lisbon, Porto.</div>
+      <span class="country-badge soon">Coming Soon</span>
+    </div>
+    <div class="country-card" style="opacity:0.6">
+      <span class="country-flag">🇫🇷</span>
+      <div class="country-name">France</div>
+      <div class="country-sub">Provence, Dordogne, Cote d'Azur and more.</div>
+      <span class="country-badge soon">Coming Soon</span>
+    </div>
+    <div class="country-card" style="opacity:0.6">
+      <span class="country-flag">🇮🇹</span>
+      <div class="country-name">Italy</div>
+      <div class="country-sub">Tuscany, Sicily, Lake Como. 1 Euro houses program.</div>
+      <span class="country-badge soon">Coming Soon</span>
+    </div>
+    <div class="country-card" style="opacity:0.6">
+      <span class="country-flag">🇲🇽</span>
+      <div class="country-name">Mexico</div>
+      <div class="country-sub">Puerto Vallarta, San Miguel, Playa del Carmen, Saltillo.</div>
+      <span class="country-badge soon">Coming Soon</span>
+    </div>
+    <div class="country-card" style="opacity:0.6">
+      <span class="country-flag">🇨🇴</span>
+      <div class="country-name">Colombia</div>
+      <div class="country-sub">Medellin, Bogota, Cartagena. Fast-growing expat scene.</div>
+      <span class="country-badge soon">Coming Soon</span>
+    </div>
+  </div>
+</section>
+
+<section class="how">
+  <h3>How It Works</h3>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-title">Choose Your Country</div>
+      <div class="step-sub">Select where you're buying or moving. Each country has its own verified supplier directory.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-title">Find Your Expert</div>
+      <div class="step-sub">Browse verified lawyers, tax advisors, buyer agents, doctors, and schools. Filter by specialty and language.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-title">Contact Directly</div>
+      <div class="step-sub">Every supplier has been verified. Connect directly — no middleman, no fees to you.</div>
+    </div>
+  </div>
+</section>
+
+<section class="categories" style="margin-top:3rem">
+  <div class="section-label">Supplier Categories</div>
+  <div class="cat-grid">
+    <div class="cat-pill">Immigration Lawyers</div>
+    <div class="cat-pill">Tax Advisors</div>
+    <div class="cat-pill">Property Buyer Agents</div>
+    <div class="cat-pill">Property Managers</div>
+    <div class="cat-pill">Currency Exchange</div>
+    <div class="cat-pill">International Schools</div>
+    <div class="cat-pill">English-Speaking Healthcare</div>
+    <div class="cat-pill">Relocation Agents</div>
+    <div class="cat-pill">Architects</div>
+    <div class="cat-pill">Notaries</div>
+    <div class="cat-pill">Mortgage Brokers</div>
+    <div class="cat-pill">Accountants</div>
+  </div>
+</section>
+
+<section style="padding: 2rem 1.5rem">
+  <div class="supplier-cta">
+    <h3>Are You a Local Supplier?</h3>
+    <p>Work with expats and foreign buyers? Get listed in front of thousands of people actively searching for your services in your country. Free to list.</p>
+    <div class="supplier-form">
+      <input type="email" placeholder="Your email address">
+      <button>Apply for Free</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>2026 VerifiedExpatSuppliers.com — Find trusted local experts abroad</p>
+  <p style="margin-top:0.4rem"><a href="/privacy.html">Privacy Policy</a> - <a href="/terms.html">Terms</a> - <a href="https://verifiedaiconsultants.com">AI Consultants</a></p>
+  <p style="margin-top:0.5rem">A service of <a href="https://warrenbg.com" style="color:#f59e0b;font-weight:700;">Warren Business Group</a> - Building AI-powered businesses.</p>
+</footer>
+
+</body>
+</html>
