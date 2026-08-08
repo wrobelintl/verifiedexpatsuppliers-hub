@@ -1,0 +1,13 @@
+.DS_Store
+
+# NEVER commit internal material to this repo.
+# Cloudflare Pages serves EVERY file in it — including dot-prefixed directories
+# and .md files — so anything committed here is published to the live site.
+# Verified the hard way: /drafts/PRICING-PROPOSAL.md returned HTTP 200 publicly,
+# and moving it to /.internal/ did not help either.
+# Internal material lives OUTSIDE this repo, in ../verifiedexpatsuppliers-internal/
+drafts/
+verification/
+.internal/
+*.md
+!README.md

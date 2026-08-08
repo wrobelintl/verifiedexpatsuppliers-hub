@@ -1,7 +1,6 @@
-# Belt-and-braces only. Repo-only material lives in .internal/, which Cloudflare
-# Pages excludes from the deployed output because the directory name starts with
-# a dot. These rules are a second line of defence, not the primary mechanism —
-# static files are matched before _redirects rules, so a served file wins.
+# Second line of defence only. The primary protection is that internal material
+# is NOT in this repo at all — it lives outside it, because Cloudflare Pages
+# serves every file present, including dot-directories and .md files.
 /drafts/*        /404-not-served  404
 /verification/*  /404-not-served  404
 /.internal/*     /404-not-served  404
