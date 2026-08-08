@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Suppliers — How Listing and Identity Verification Work</title>
+  <meta name="description" content="How to be listed on VerifiedExpatSuppliers.com: what we verify against official public registers in Spain, Portugal, Mexico and Costa Rica, what we require from you, and what we will never do.">
+  <link rel="canonical" href="https://verifiedexpatsuppliers.com/for-suppliers/">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --gold:#f59e0b; --dark:#0f172a; --mid:#1e293b; --line:#334155; --muted:#94a3b8; --red:#f87171; --green:#34d399; }
+    body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:var(--dark); color:#e2e8f0; line-height:1.7; }
+    a { color:var(--gold); }
+    header { background:linear-gradient(135deg,#0f172a,#1e3a5f); border-bottom:2px solid var(--gold); padding:1rem 1.5rem; }
+    .header-inner { max-width:820px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
+    .back-link { font-size:0.8rem; color:var(--muted); text-decoration:none; }
+    .back-link:hover { color:var(--gold); }
+    .brand { font-size:0.95rem; font-weight:800; color:#fff; }
+    .wrap { max-width:820px; margin:0 auto; padding:2.5rem 1.5rem 4rem; }
+    h1 { font-size:clamp(1.6rem,4vw,2.3rem); font-weight:800; color:#fff; line-height:1.25; margin-bottom:0.75rem; }
+    .standfirst { color:var(--muted); font-size:1.02rem; margin-bottom:1.75rem; }
+    h2 { font-size:1.2rem; font-weight:800; color:#fff; margin:2.5rem 0 0.75rem; padding-top:0.65rem; border-top:1px solid var(--line); }
+    h3 { font-size:0.98rem; font-weight:700; color:var(--gold); margin:1.4rem 0 0.4rem; }
+    p { margin-bottom:1rem; color:#cbd5e1; }
+    ul, ol { margin:0 0 1rem 1.25rem; color:#cbd5e1; }
+    li { margin-bottom:0.5rem; }
+    strong { color:#f1f5f9; }
+    .callout { background:var(--mid); border-left:4px solid var(--gold); border-radius:8px; padding:1.2rem 1.35rem; margin-bottom:1.75rem; }
+    .callout p:last-child { margin-bottom:0; }
+    .never { background:#2a1416; border-left:4px solid var(--red); border-radius:8px; padding:1.2rem 1.35rem; margin:1.5rem 0; }
+    .never h3 { color:var(--red); margin-top:0; }
+    .never li { color:#fecaca; }
+    table { width:100%; border-collapse:collapse; margin-bottom:1rem; font-size:0.87rem; display:block; overflow-x:auto; }
+    th, td { text-align:left; padding:0.6rem 0.7rem; border-bottom:1px solid var(--line); vertical-align:top; }
+    th { color:var(--gold); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em; white-space:nowrap; }
+    td:first-child { white-space:nowrap; color:#f1f5f9; font-weight:600; }
+    .apply { background:var(--mid); border:1px dashed var(--gold); border-radius:12px; padding:1.75rem; margin:2.5rem 0; }
+    .apply h2 { border-top:none; margin-top:0; padding-top:0; }
+    .apply .addr { font-size:1.1rem; font-weight:700; margin:0.75rem 0; }
+    code { background:#0b1220; border:1px solid var(--line); border-radius:4px; padding:0.1rem 0.4rem; font-size:0.85rem; color:#e2e8f0; }
+
+    /* ---- LISTING CARD COMPONENT (styles live here; zero cards are rendered) ---- */
+    .listing-card { background:var(--mid); border:1px solid var(--line); border-radius:12px; padding:1.4rem 1.5rem; margin-bottom:1rem; }
+    .listing-head { display:flex; align-items:baseline; justify-content:space-between; gap:0.75rem; flex-wrap:wrap; }
+    .listing-name { font-size:1.05rem; font-weight:800; color:#fff; }
+    .listing-cat { font-size:0.78rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.06em; }
+    .listing-desc { font-size:0.9rem; color:#cbd5e1; margin:0.6rem 0 0.85rem; }
+    .listing-verified { font-size:0.83rem; color:var(--green); font-weight:600; margin-bottom:0.35rem; }
+    .listing-disclosure { font-size:0.78rem; color:var(--muted); border-top:1px solid var(--line); padding-top:0.7rem; margin-top:0.85rem; }
+    .listing-contact { display:inline-block; margin-top:0.6rem; font-size:0.88rem; font-weight:700; color:var(--gold); text-decoration:none; }
+    .listing-contact:hover { text-decoration:underline; }
+
+    footer { border-top:1px solid var(--line); text-align:center; padding:2rem 1.5rem; color:#64748b; font-size:0.8rem; }
+    footer a { color:#64748b; margin:0 0.4rem; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="back-link">&larr; All country guides</a>
+    <div class="brand">For Suppliers</div>
+  </div>
+</header>
+
+<div class="wrap">
+  <h1>Listing and identity verification</h1>
+  <p class="standfirst">How to appear on this site, exactly what we check before you do, and the things we will not do at any price.</p>
+
+  <div class="callout">
+    <p><strong>Read this first: a verified listing is identity verification only.</strong></p>
+    <p>It means we have confirmed that your business exists and that the details you gave us match official public records. <strong>It is never an endorsement of the quality of your work.</strong> We have not used your services, we have not spoken to your clients, and we are not in a position to judge whether you are good at your job.</p>
+    <p style="margin-bottom:0">Every listing on this site says so, in those words, on the card itself. If you are looking for a directory that will call you "top rated" or "trusted", this is not that directory and never will be.</p>
+  </div>
+
+  <h2>What we check, country by country</h2>
+  <p>This is the actual checklist we run. Each item is checked against a public register, and we record the source URL and the date we checked it. If something cannot be confirmed, it stays unconfirmed — we never upgrade a result by inference or because an applicant assures us it is fine.</p>
+
+  <table>
+    <tr><th>Country</th><th>What we check it against</th></tr>
+    <tr>
+      <td>🇪🇸 Spain</td>
+      <td>Company registration via the <strong>Registro Mercantil</strong>, or for lawyers the relevant <strong>Colegio de Abogados</strong> register. Plus: NIF, an active website whose identity matches the claim, and a business address.</td>
+    </tr>
+    <tr>
+      <td>🇵🇹 Portugal</td>
+      <td><strong>NIPC</strong> via the registo comercial, or for lawyers the <strong>Ordem dos Advogados</strong> roll. Plus: an active website whose identity matches the claim, and a business address.</td>
+    </tr>
+    <tr>
+      <td>🇲🇽 Mexico</td>
+      <td><strong>RFC</strong> registration, or for notaries the relevant <strong>Colegio de Notarios</strong>. Plus: an active website whose identity matches the claim, and a business address.</td>
+    </tr>
+    <tr>
+      <td>🇨🇷 Costa Rica</td>
+      <td><strong>Cédula jurídica</strong> via the <strong>Registro Nacional</strong>, or for lawyers the <strong>Colegio de Abogados y Abogadas</strong>. Plus: an active website whose identity matches the claim, and a business address.</td>
+    </tr>
+  </table>
+
+  <p>Each check produces one of three outcomes, and we publish the date it was carried out:</p>
+  <ul>
+    <li><strong>Confirmed</strong> — found in the register, and the details match what you told us.</li>
+    <li><strong>Partial</strong> — some items confirmed, others not. We will tell you which, and a partial result is disclosed on the listing.</li>
+    <li><strong>Unconfirmed</strong> — we could not find you, or the details did not match. No listing.</li>
+  </ul>
+
+  <h2>What we need from you</h2>
+  <ol>
+    <li><strong>Written consent to be listed.</strong> We list nobody who has not asked. A reply by email saying you want to be listed is enough, and we keep it on file.</li>
+    <li><strong>The registration number</strong> for your country from the table above.</li>
+    <li><strong>A contact route we can publish</strong> — the email, phone or page you want enquiries to arrive at.</li>
+    <li><strong>Agreement to our corrections policy</strong>: if a reader tells us something on your listing is wrong, we will ask you about it and correct it. You can have your listing removed at any time, for any reason, without notice or argument.</li>
+  </ol>
+
+  <h2>Enquiries go straight to you</h2>
+  <p>We do not sit in the middle. Your listing shows <em>your</em> contact route, and a reader who wants to speak to you contacts you directly. We do not collect the enquiry, we do not forward it, we do not see it, and we take no commission on any work that results. There is nothing for us to intercept and no per-lead fee.</p>
+
+  <div class="never">
+    <h3>What we will never do</h3>
+    <ul>
+      <li><strong>Sell a rating or a ranking.</strong> Paying more will never buy a better position or a better score.</li>
+      <li><strong>Invent reviews or testimonials.</strong> Not now, not to fill space, not ever.</li>
+      <li><strong>List anyone who has not asked to be listed.</strong> This site previously carried example entries that were not real businesses; they were deleted, and that will not happen again.</li>
+      <li><strong>Display stars.</strong> There is no rating display anywhere on a listing card. If client reviews are introduced later they will be real, moderated, and shown with the number they are based on — "3 reviews" and the reviews themselves, never a star average implying a body of opinion that does not exist.</li>
+    </ul>
+  </div>
+
+  <h2>Paid placement — stated plainly</h2>
+  <div class="callout">
+    <p><strong>Listings are paid placements.</strong> Suppliers pay a fee to appear on this site, and every listing card carries this disclosure:</p>
+    <p style="margin-bottom:0"><code>Listed supplier — paid placement, identity verified on &lt;date&gt;</code></p>
+  </div>
+  <p>That disclosure is on the card itself, next to the business name, not buried in a footer or a terms page. This is a legal requirement under FTC rules on endorsements and disclosure, and equivalent consumer-protection norms in the EU, and not something we would remove for a fee.</p>
+  <p>Paying does not affect what we verify, the outcome we record, or the order listings appear in. If your identity check fails, the fee is not a route around it.</p>
+
+  <h2>What a listing looks like</h2>
+  <p>A listing card shows your business name, country and category, one line describing what you do, the line stating exactly what was verified and when, the paid-placement disclosure, and your own contact route. There is no rating, no score, no badge implying quality, and no "featured" tier that money can buy.</p>
+
+  <div class="apply">
+    <h2>How to apply</h2>
+    <p>There is no form. Email us — it reaches a person, and your details do not pass through any third-party service on the way.</p>
+    <p class="addr"><a href="mailto:shane@warrenbg.com?subject=Supplier%20listing%20%E2%80%94%20">shane@warrenbg.com</a></p>
+    <p>Use the subject line <code>Supplier listing — &lt;country&gt;</code>, for example <code>Supplier listing — Spain</code>.</p>
+    <p style="margin-bottom:0">Tell us your business name, your registration number, your website, the category you work in, and the contact route you want published. We will run the checks and tell you the outcome either way — including when the answer is no.</p>
+  </div>
+
+  <h2>Corrections and removals</h2>
+  <p>This applies whether or not you are a paying supplier. If anything on this site is wrong, or refers to you and you want it changed or removed, email the address above and we will action it. Removal requests are honoured without question.</p>
+</div>
+
+<footer>
+  <p>&copy; 2026 VerifiedExpatSuppliers.com — Identity verification only. We do not endorse, rate or rank any supplier.</p>
+  <p style="margin-top:0.4rem"><a href="/">All countries</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
+  <p style="margin-top:0.5rem">A service of <a href="https://warrenbg.com" style="color:#f59e0b;font-weight:700;">Warren Business Group</a></p>
+</footer>
+
+<!--
+  ============================================================================
+  LISTING CARD TEMPLATE — DO NOT RENDER UNTIL A REAL SUPPLIER HAS PASSED.
+  Zero listings exist. Copy this block into the country page's #suppliers slot
+  ONLY when verification/records/<supplier>.md shows outcome CONFIRMED and a
+  consent-received date. Replace every {{PLACEHOLDER}}. Delete none of the
+  disclosure lines.
+
+  <div class="listing-card">
+    <div class="listing-head">
+      <div class="listing-name">{{BUSINESS_LEGAL_NAME}}</div>
+      <div class="listing-cat">{{CATEGORY}} &middot; {{CITY_OR_REGION}}</div>
+    </div>
+    <div class="listing-desc">{{ONE_LINE_DESCRIPTION_IN_THEIR_OWN_WORDS}}</div>
+    <div class="listing-verified">Identity verified: {{WHAT_WAS_CHECKED}} confirmed against {{REGISTER_NAME}} on {{DD_MONTH_YYYY}}.</div>
+    <a class="listing-contact" href="{{THEIR_CONTACT_URL_OR_MAILTO}}">{{THEIR_PUBLISHED_CONTACT_ROUTE}} &rarr;</a>
+    <div class="listing-disclosure">
+      Listed supplier — paid placement, identity verified on {{DD_MONTH_YYYY}}.
+      Identity verification only; this is not an endorsement of work quality.
+      Enquiries go directly to the supplier; we take no commission.
+    </div>
+  </div>
+
+  NO rating, score, star or "featured" element may be added to this card.
+  ============================================================================
+-->
+
+</body>
+</html>

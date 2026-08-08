@@ -1,0 +1,5 @@
+# Repo-only material must never be served on the live site.
+# /drafts contains UNAPPROVED PRICING; /verification contains the runbook and
+# applicant records. Both are repo-only by design.
+/drafts/*        /404-not-served  404
+/verification/*  /404-not-served  404
