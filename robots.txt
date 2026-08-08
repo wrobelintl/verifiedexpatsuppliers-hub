@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /drafts/
-Disallow: /verification/
 
 Sitemap: https://verifiedexpatsuppliers.com/sitemap.xml
