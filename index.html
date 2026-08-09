@@ -4,135 +4,233 @@
   <meta name="google-site-verification" content="yyzo3aQHIK1LxIy3PZMqnrf1hSeuXZPA-B-aoXvJIKo" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Verified Suppliers for Expats — Lawyers, Accountants, Healthcare and More in Spain, Portugal, Mexico and Costa Rica</title>
-  <meta name="description" content="A directory of identity-verified service suppliers for expats — legal, accounting and tax, real estate, healthcare, relocation, insurance and banking — in Spain, Portugal, Mexico and Costa Rica. Applications from suppliers are open. Free sourced country guides alongside.">
-  <meta name="keywords" content="expat lawyers Spain, expat accountants Portugal, expat services Mexico, relocation Costa Rica, verified expat suppliers directory">
+  <title>Verified Expat Suppliers — Trusted Services for Spain, Portugal, Mexico and Costa Rica</title>
+  <meta name="description" content="A directory of identity-verified services for expats — legal, accounting and tax, real estate, healthcare, relocation, insurance and banking — in Spain, Portugal, Mexico and Costa Rica. Free property tax calculators and sourced country guides.">
   <link rel="canonical" href="https://verifiedexpatsuppliers.com/">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root { --gold:#f59e0b; --dark:#0f172a; --mid:#1e293b; --line:#334155; --muted:#94a3b8; }
-    body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:var(--dark); color:#e2e8f0; line-height:1.7; }
-    a { color:var(--gold); }
-    header { background:linear-gradient(135deg,#0f172a,#1e3a5f); border-bottom:2px solid var(--gold); padding:1.25rem 1.5rem; text-align:center; }
-    header h1 { font-size:1.5rem; font-weight:800; color:#fff; }
-    header h1 span { color:var(--gold); }
-    header p { color:var(--muted); font-size:0.88rem; margin-top:0.3rem; }
-    .hero { text-align:center; padding:3.5rem 1.5rem 2rem; max-width:720px; margin:0 auto; }
-    .hero h2 { font-size:clamp(1.6rem,4vw,2.4rem); font-weight:800; color:#fff; line-height:1.25; margin-bottom:1rem; }
-    .hero p { color:var(--muted); font-size:1rem; margin-bottom:0.75rem; }
-    .wrap { max-width:900px; margin:0 auto; padding:0 1.5rem 3rem; }
-    .section-label { font-size:0.72rem; font-weight:800; text-transform:uppercase; letter-spacing:0.12em; color:var(--gold); margin:2rem 0 1rem; text-align:center; }
-    .country-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1rem; }
-    .country-card { background:var(--mid); border:1px solid var(--line); border-radius:14px; padding:1.75rem 1.5rem; text-decoration:none; color:#fff; transition:all 0.2s; display:block; }
-    .country-card:hover { border-color:var(--gold); transform:translateY(-2px); box-shadow:0 8px 24px rgba(245,158,11,0.15); }
-    .country-flag { font-size:2.5rem; display:block; margin-bottom:0.6rem; }
-    .country-name { font-size:1.15rem; font-weight:800; margin-bottom:0.35rem; }
-    .country-sub { font-size:0.82rem; color:var(--muted); line-height:1.55; }
-    .country-read { display:inline-block; margin-top:0.75rem; font-size:0.8rem; font-weight:700; color:var(--gold); }
-    .panel { background:var(--mid); border-radius:12px; padding:1.75rem; margin-top:2.5rem; }
-    .panel h3 { font-size:1.05rem; font-weight:800; color:#fff; margin-bottom:0.6rem; }
-    .panel p { color:#cbd5e1; font-size:0.9rem; margin-bottom:0.75rem; }
-    .honest { border-left:4px solid var(--gold); }
-    .hero-ctas { display:flex; gap:0.7rem; justify-content:center; flex-wrap:wrap; margin-top:1.4rem; }
-    .btn { display:inline-block; text-decoration:none; font-weight:700; font-size:0.92rem; padding:0.7rem 1.4rem; border-radius:99px; }
-    .btn-primary { background:var(--gold); color:#0f172a; }
-    .btn-ghost { border:1.5px solid var(--line); color:#e2e8f0; }
-    .btn-ghost:hover { border-color:var(--gold); color:var(--gold); }
-    .smallprint { border-top:1px solid var(--line); margin-top:2.5rem; padding-top:1.25rem; font-size:0.78rem; color:#64748b; line-height:1.65; }
-    .smallprint h3 { font-size:0.8rem; font-weight:800; color:#94a3b8; margin-bottom:0.5rem; text-transform:uppercase; letter-spacing:0.06em; }
-    .smallprint p { margin-bottom:0.6rem; }
-    .chips { display:flex; flex-wrap:wrap; gap:0.4rem; justify-content:center; margin:1.5rem auto 0; max-width:660px; }
-    .chip { background:rgba(245,158,11,0.11); border:1px solid rgba(245,158,11,0.4); color:#fcd34d; font-size:0.78rem; font-weight:700; padding:0.32rem 0.8rem; border-radius:99px; }
-    .open-note { display:inline-block; background:rgba(52,211,153,0.12); border:1px solid rgba(52,211,153,0.45); color:#6ee7b7; font-size:0.82rem; font-weight:700; padding:0.4rem 0.95rem; border-radius:99px; margin-bottom:1.1rem; }
-    .btn-supplier { background:var(--gold); color:#0f172a; box-shadow:0 6px 20px rgba(245,158,11,0.28); }
-    .supplier-band { background:linear-gradient(135deg,#1e3a5f,#0f172a); border:2px solid var(--gold); border-radius:16px; padding:2rem 1.75rem; margin-top:2.5rem; text-align:center; }
-    .supplier-band h3 { font-size:1.2rem; font-weight:800; color:#fff; margin-bottom:0.5rem; }
-    .supplier-band p { color:#cbd5e1; font-size:0.92rem; max-width:600px; margin:0 auto 1.1rem; }
-    footer { border-top:1px solid var(--line); text-align:center; padding:2rem 1.5rem; color:#64748b; font-size:0.8rem; }
-    footer a { color:#64748b; margin:0 0.4rem; }
-  </style>
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#16211E">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Verified Expat Suppliers">
+  <meta property="og:title" content="Verified Expat Suppliers — Trusted Services for Spain, Portugal, Mexico and Costa Rica">
+  <meta property="og:description" content="A directory of identity-verified services for expats — legal, accounting and tax, real estate, healthcare, relocation, insurance and banking — in Spain, Portugal, Mexico and Costa Rica. Free property tax calculators and sourced country guides.">
+  <meta property="og:url" content="https://verifiedexpatsuppliers.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Verified Expat Suppliers — Trusted Services for Spain, Portugal, Mexico and Costa Rica">
+  <meta name="twitter:description" content="A directory of identity-verified services for expats — legal, accounting and tax, real estate, healthcare, relocation, insurance and banking — in Spain, Portugal, Mexico and Costa Rica. Free property tax calculators and sourced country guides.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6286935824893984" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<header>
-  <h1>Verified <span>Expat Suppliers</span></h1>
-  <p>Trusted services for your life abroad — and free guides to go with them</p>
+<header class="site-head">
+  <div class="shell head-in">
+    <a class="logo" href="/">
+      <img class="logo-mark" src="/assets/logo.svg" alt="" width="30" height="30">
+      <span class="logo-txt">Verified<br><em>Expat Suppliers</em></span>
+    </a>
+    <nav class="head-nav">
+      <a href="/#countries" class="nav-hide">Countries</a>
+      <a href="/spain/itp-calculator/" class="nav-hide">Calculators</a>
+      <a href="/for-suppliers/" class="btn btn-primary btn-sm">Get listed</a>
+    </nav>
+  </div>
 </header>
 
 <section class="hero">
-  <div class="open-note">Applications from suppliers are open</div>
-  <h2>Find trusted services<br>for your life abroad</h2>
-  <p>Lawyers, accountants, real estate, healthcare, relocation, insurance and banking — for expats in Spain, Portugal, Mexico and Costa Rica. Every supplier we list has had their identity checked against the official public register for their profession, and every listing says exactly what that does and does not mean.</p>
-  <div class="chips">
-    <span class="chip">Legal</span>
-    <span class="chip">Accounting &amp; tax</span>
-    <span class="chip">Real estate</span>
-    <span class="chip">Healthcare — clinics &amp; dentists</span>
-    <span class="chip">Relocation</span>
-    <span class="chip">Insurance</span>
-    <span class="chip">Banking</span>
-  </div>
-  <div class="hero-ctas">
-    <a class="btn btn-primary" href="#countries">I&rsquo;m moving abroad</a>
-    <a class="btn btn-supplier" href="/for-suppliers/">I&rsquo;m a supplier — get listed</a>
+  <div class="shell hero-in">
+    <span class="pill pill-open"><span class="dot"></span>Verified network now taking applications</span>
+    <h1>Find trusted services for your <span class="accent">life abroad</span></h1>
+    <p class="hero-lede">Lawyers, accountants, real estate, healthcare, relocation, insurance and banking &mdash; for people moving to Spain, Portugal, Mexico and Costa Rica. Every supplier we list has had their identity checked against the official public register for their profession.</p>
+    <div class="chips"><span class="chip">Legal</span><span class="chip">Accounting &amp; tax</span><span class="chip">Real estate</span><span class="chip">Healthcare &mdash; clinics &amp; dentists</span><span class="chip">Relocation</span><span class="chip">Insurance</span><span class="chip">Banking</span></div>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#countries">I&rsquo;m moving abroad</a>
+      <a class="btn btn-light" href="/for-suppliers/">I&rsquo;m a supplier &mdash; get listed</a>
+    </div>
   </div>
 </section>
 
-<div class="wrap">
-  <div class="section-label" id="countries">Choose your country</div>
-  <p style="text-align:center;color:var(--muted);font-size:0.9rem;margin:-0.4rem auto 1.4rem;max-width:600px">Each country page is the hub for that country: the verified supplier categories we are opening, and a free sourced guide to buying property and moving there.</p>
-  <div class="country-grid">
-    <a class="country-card" href="/spain/">
-      <span class="country-flag">🇪🇸</span>
-      <div class="country-name">Spain</div>
-      <div class="country-sub">Regional transfer tax from 6% to 13%, the non-resident tax you owe even on an empty property, and the residency routes left since the golden visa ended in April 2025.</div>
-      <span class="country-read">Spain suppliers &amp; guide &rarr;</span>
-    </a>
-    <a class="country-card" href="/portugal/">
-      <span class="country-flag">🇵🇹</span>
-      <div class="country-name">Portugal</div>
-      <div class="country-sub">A flat 7.5% transfer tax for non-residents starts 1 September 2026, and the NHR tax regime is closed. Both are still widely misreported online.</div>
-      <span class="country-read">Portugal suppliers &amp; guide &rarr;</span>
-    </a>
-    <a class="country-card" href="/mexico/">
-      <span class="country-flag">🇲🇽</span>
-      <div class="country-name">Mexico</div>
-      <div class="country-sub">The restricted zone and how the fideicomiso bank trust actually works, what a Notario is really for, and why ejido land is the costliest trap on the coast.</div>
-      <span class="country-read">Mexico suppliers &amp; guide &rarr;</span>
-    </a>
-    <a class="country-card" href="/costa-rica/">
-      <span class="country-flag">🇨🇷</span>
-      <div class="country-name">Costa Rica</div>
-      <div class="country-sub">Equal ownership rights to citizens almost everywhere — except the first 200 metres of coast, which is a concession, not freehold, and capped at 49% foreign ownership.</div>
-      <span class="country-read">Costa Rica suppliers &amp; guide &rarr;</span>
-    </a>
+<section class="section">
+  <div class="shell">
+    <div class="section-head">
+      <div class="eyebrow">Free tools</div>
+      <h2>Work out the tax before anyone quotes you</h2>
+      <p>Two calculators built from the same dated, sourced tables as our country guides. No sign-up, nothing stored, and every result links the source it came from.</p>
+    </div>
+    <div class="country-grid" style="grid-template-columns:1fr">
+      <div style="display:grid;gap:1rem;grid-template-columns:1fr">
+        <a class="calc-cta" href="/spain/itp-calculator/" style="margin:0">
+          <div class="k">Spain &middot; free calculator</div>
+          <div class="t">What will ITP cost you in Spain?</div>
+          <div class="d">Transfer tax is set by region and the spread is enormous. The same &euro;400,000 flat costs &euro;24,000 in Madrid and &euro;40,000 in Catalunya. All 17 regions, with the full cost stack.</div>
+        </a>
+        <a class="calc-cta" href="/portugal/imt-calculator/" style="margin:0">
+          <div class="k">Portugal &middot; free calculator</div>
+          <div class="t">Portugal IMT: what changes on 1 September 2026</div>
+          <div class="d">Non-residents move to a flat 7.5% from the first euro. We show the old progressive scale and the new flat rate side by side, with the difference in euros &mdash; almost nobody else does.</div>
+        </a>
+      </div>
+    </div>
   </div>
+</section>
 
-  <div class="supplier-band">
-    <h3>Are you a supplier serving expats?</h3>
-    <p>We are opening the verified network now, across legal, accounting and tax, real estate, healthcare, relocation, insurance and banking. Verification means we confirm your business exists and your details match the official register for your profession — identity verification, never an endorsement of your work, and every card says so. Listings are paid placements and are disclosed as such on the card.</p>
-    <a class="btn btn-supplier" href="/for-suppliers/">What we check, and how to apply &rarr;</a>
-    <p style="margin:0.9rem 0 0;font-size:0.85rem">Rates are published openly on the <a href="/pricing/">pricing page</a> — no sales call required.</p>
+<section class="section section-alt" id="countries">
+  <div class="shell">
+    <div class="section-head">
+      <div class="eyebrow">Choose your country</div>
+      <h2>Each country page is that country&rsquo;s hub</h2>
+      <p>The verified supplier categories we are opening there, and a free, sourced guide to buying property and moving. Every figure dated and linked to where it came from.</p>
+    </div>
+    <div class="country-grid">
+      <a class="country-card" href="/spain/">
+        <img class="country-art" src="/assets/art-spain.svg" alt="" width="320" height="180" loading="lazy">
+        <div class="country-body">
+          <div class="country-name">Spain</div>
+          <div class="country-meta"><span class="tagx">Suppliers &amp; guide</span><span class="tagx tagx-clay">Free ITP calculator</span></div>
+          <p class="country-sub">Transfer tax runs from 4% to 13% depending on the region &mdash; a &euro;40,000 swing on the same flat. Plus the non-resident tax you owe on an empty property.</p>
+          <span class="country-go">Spain services &amp; guide &rarr;</span>
+        </div>
+      </a>
+      <a class="country-card" href="/portugal/">
+        <img class="country-art" src="/assets/art-portugal.svg" alt="" width="320" height="180" loading="lazy">
+        <div class="country-body">
+          <div class="country-name">Portugal</div>
+          <div class="country-meta"><span class="tagx">Suppliers &amp; guide</span><span class="tagx tagx-clay">Free IMT calculator</span></div>
+          <p class="country-sub">From 1 September 2026 non-residents pay a flat 7.5% IMT instead of the progressive scale. NHR is closed. Both are still widely misreported.</p>
+          <span class="country-go">Portugal services &amp; guide &rarr;</span>
+        </div>
+      </a>
+      <a class="country-card" href="/mexico/">
+        <img class="country-art" src="/assets/art-mexico.svg" alt="" width="320" height="180" loading="lazy">
+        <div class="country-body">
+          <div class="country-name">Mexico</div>
+          <div class="country-meta"><span class="tagx">Suppliers &amp; guide</span></div>
+          <p class="country-sub">The restricted zone and how the fideicomiso bank trust actually works, what a Notario is really for, and why ejido land is the costliest trap on the coast.</p>
+          <span class="country-go">Mexico services &amp; guide &rarr;</span>
+        </div>
+      </a>
+      <a class="country-card" href="/costa-rica/">
+        <img class="country-art" src="/assets/art-costa-rica.svg" alt="" width="320" height="180" loading="lazy">
+        <div class="country-body">
+          <div class="country-name">Costa Rica</div>
+          <div class="country-meta"><span class="tagx">Suppliers &amp; guide</span></div>
+          <p class="country-sub">Equal ownership rights to citizens almost everywhere &mdash; except the first 200 metres of coast, which is a concession, not freehold, capped at 49% foreign ownership.</p>
+          <span class="country-go">Costa Rica services &amp; guide &rarr;</span>
+        </div>
+      </a>
+    </div>
   </div>
+</section>
 
-  <div class="panel">
-    <h3>Corrections and removals</h3>
-    <p>If something on this site is wrong or out of date, tell us and we will fix it. If you or your business are referred to anywhere here and you want that changed or removed, email us and we will action it — no questions asked.</p>
-    <p style="font-size:1rem;font-weight:700;margin-bottom:0"><a href="mailto:shane@warrenbg.com?subject=verifiedexpatsuppliers.com%20correction%20or%20removal">shane@warrenbg.com</a></p>
+<section class="section">
+  <div class="shell-n" style="padding-inline:0">
+    <div class="section-head" style="padding-inline:var(--pad)">
+      <div class="eyebrow">What a listing looks like</div>
+      <h2>The card a verified supplier gets</h2>
+      <p>There are no suppliers listed yet, so rather than leave you guessing, here is the component itself with placeholder content. It is a mockup, clearly marked as one &mdash; we will not invent a firm to make this section look busier than it is.</p>
+    </div>
+    <div style="padding-inline:var(--pad)">
+      <div class="sample-wrap">
+        <span class="sample-flag">Example layout &mdash; not a real firm</span>
+        <div class="supplier-card">
+          <div class="sc-top">
+            <div class="sc-avatar">Your<br>logo</div>
+            <div>
+              <div class="sc-name">Your firm here</div>
+              <div class="sc-where">Your city &middot; serving the regions you choose</div>
+            </div>
+          </div>
+          <p class="sc-blurb">Up to forty words, in your own words, describing what you actually do. Factual claims only &mdash; we will not publish a superlative we cannot check.</p>
+          <div class="sc-row">
+            <span>your-firm.com</span>
+            <span>The contact route you choose</span>
+          </div>
+          <span class="sc-verified">Identity verified against the register for your profession</span>
+          <span class="sc-disclosure">Listed supplier &mdash; paid placement, identity verified on [date] against [named register]. Identity verification only; this is not an endorsement of the quality of their work.</span>
+        </div>
+        <p class="calc-note" style="margin-top:1rem">No rating. No stars. No score. No &ldquo;featured&rdquo; tier and no position that can be bought &mdash; listings are ordered alphabetically. Those elements do not exist in the stylesheet, so they cannot be switched on by accident.</p>
+      </div>
+    </div>
   </div>
-  <div class="smallprint">
-    <h3>What verified means here, and what it does not</h3>
-    <p>This is a supplier directory with free country guides alongside it. We verify identity against official public registers; we do not rate, rank or endorse anyone, we are not affiliated with any firm or professional, and we take no commission or referral fee on any work that results.</p>
-    <p>Every country page reserves a section for verified suppliers. All four currently read "applications open — no suppliers listed yet", and that is accurate: there are none yet. Where a supplier does appear, "verified" means we hold a dated record of their registration or licence number checked against the issuing register, a confirmed address and contact route, and their written agreement to be listed. Nothing appears before that evidence exists, and we will never display a rating or review score, because we have no review data and will not invent any.</p>
-    <p style="margin-bottom:0">Nothing here is legal, tax or immigration advice. Rules and rates change, often annually. Confirm anything that will cost you money with the official authority or a qualified professional.</p>
-  </div>
-</div>
+</section>
 
-<footer>
-  <p>&copy; 2026 VerifiedExpatSuppliers.com — General guidance only. We do not rate, rank or endorse anyone, and we take no commission.</p>
-  <p style="margin-top:0.4rem"><a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
-  <p style="margin-top:0.5rem">A service of <a href="https://warrenbg.com" style="color:#f59e0b;font-weight:700;">Warren Business Group</a></p>
+<section class="section section-alt">
+  <div class="shell">
+    <div class="section-head">
+      <div class="eyebrow">How this works</div>
+      <h2>Why an empty directory is the honest starting point</h2>
+    </div>
+    <div class="feature">
+      <div class="feature-item">
+        <span class="feature-num">01</span>
+        <h3>We check identity, not quality</h3>
+        <p>We confirm the business exists and its details match the official register for its profession &mdash; a bar roll for a lawyer, a professional college for a clinician, the commercial register for a company. We have not used their services and cannot judge whether they are good.</p>
+      </div>
+      <div class="feature-item">
+        <span class="feature-num">02</span>
+        <h3>Enquiries go straight to them</h3>
+        <p>Your listing shows your contact route and the reader contacts you directly. We do not collect the enquiry, we do not forward it, we never see it, and we take no commission on any work that results.</p>
+      </div>
+      <div class="feature-item">
+        <span class="feature-num">03</span>
+        <h3>Nothing appears before the evidence does</h3>
+        <p>All four country pages currently read &ldquo;applications open &mdash; no suppliers listed yet&rdquo;, and that is accurate. We would rather show an empty section than a name we cannot evidence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="band">
+  <div class="shell band-in">
+    <span class="pill pill-open"><span class="dot"></span>Applications open</span>
+    <h2>Serving expats in Spain, Portugal, Mexico or Costa Rica?</h2>
+    <p>We are opening the verified network across legal, accounting and tax, real estate, healthcare, relocation, insurance and banking. Identity checked against the official register for your profession, written consent required, and paid placement disclosed on every card.</p>
+    <div class="hero-ctas" style="justify-content:center">
+      <a class="btn btn-primary" href="/for-suppliers/">What we check, and how to apply</a>
+      <a class="btn btn-light" href="/pricing/">See the rates</a>
+    </div>
+  </div>
+</section>
+
+
+<footer class="site-foot">
+  <div class="shell">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <h4>Verified Expat Suppliers</h4>
+        <p>A directory of identity-verified services for people moving to Spain, Portugal, Mexico and Costa Rica &mdash; with free, sourced country guides alongside it.</p>
+      </div>
+      <div>
+        <h4>Countries</h4>
+        <a href="/spain/">Spain</a>
+        <a href="/portugal/">Portugal</a>
+        <a href="/mexico/">Mexico</a>
+        <a href="/costa-rica/">Costa Rica</a>
+      </div>
+      <div>
+        <h4>Free calculators</h4>
+        <a href="/spain/itp-calculator/">Spain ITP calculator</a>
+        <a href="/portugal/imt-calculator/">Portugal IMT calculator</a>
+      </div>
+      <div>
+        <h4>Suppliers</h4>
+        <a href="/for-suppliers/">How verification works</a>
+        <a href="/pricing/">Listing rates</a>
+        <a href="mailto:shane@warrenbg.com?subject=Supplier%20listing">Apply by email</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="foot-small">
+      <p><strong style="color:#C3CDC7">What verified means here.</strong> We confirm that a business exists and that its details match the official public register for its profession &mdash; identity verification only. It is never an endorsement of the quality of anyone's work, and every listing card says so. We do not rate, rank or endorse anyone, we hold no review data and will never display a rating, and we take no commission or referral fee on any work that results. Listings are paid placements and are disclosed as such on the card.</p>
+      <p><strong style="color:#C3CDC7">Nothing here is legal, tax or immigration advice.</strong> The guides and calculators are general information. Rules and rates change, often annually. Confirm anything that will cost you money with the official authority or a qualified professional before you commit.</p>
+      <p><strong style="color:#C3CDC7">Corrections and removals.</strong> If something here is wrong or out of date, or you or your business are referred to anywhere on this site and you want that changed or removed, email <a href="mailto:shane@warrenbg.com?subject=verifiedexpatsuppliers.com%20correction%20or%20removal">shane@warrenbg.com</a> and we will action it &mdash; no questions asked.</p>
+      <p class="foot-base">&copy; 2026 VerifiedExpatSuppliers.com &mdash; a service of <a href="https://warrenbg.com">Warren Business Group</a>, a Wyoming LLC.</p>
+    </div>
+  </div>
 </footer>
 
 </body>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Verified Expat Suppliers">
+  <title>Verified Expat Suppliers</title>
+  <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#B4542E"/><stop offset="1" stop-color="#B08532"/>
+  </linearGradient></defs>
+  <path d="M32 4c12 0 22 9 22 21v20a15 15 0 0 1-15 15H25a15 15 0 0 1-15-15V25C10 13 20 4 32 4z" fill="url(#lg)"/>
+  <path d="M32 14c7 0 12 5 12 12v18a7 7 0 0 1-7 7H27a7 7 0 0 1-7-7V26c0-7 5-12 12-12z" fill="#FBF8F3" opacity="0.94"/>
+  <path d="m25 33 5 5 10-11" fill="none" stroke="#B4542E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

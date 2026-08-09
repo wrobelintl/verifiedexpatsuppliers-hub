@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="google-site-verification" content="yyzo3aQHIK1LxIy3PZMqnrf1hSeuXZPA-B-aoXvJIKo" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spain ITP Calculator 2026 — Property Transfer Tax by Region</title>
+  <meta name="description" content="Free Spain ITP calculator. Pick your autonomous community and purchase price to estimate 2026 property transfer tax, plus notary, registry and legal fees. Every rate sourced and dated.">
+  <link rel="canonical" href="https://verifiedexpatsuppliers.com/spain/itp-calculator/">
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#16211E">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Verified Expat Suppliers">
+  <meta property="og:title" content="Spain ITP Calculator 2026 — Property Transfer Tax by Region">
+  <meta property="og:description" content="Free Spain ITP calculator. Pick your autonomous community and purchase price to estimate 2026 property transfer tax, plus notary, registry and legal fees. Every rate sourced and dated.">
+  <meta property="og:url" content="https://verifiedexpatsuppliers.com/spain/itp-calculator/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Spain ITP Calculator 2026 — Property Transfer Tax by Region">
+  <meta name="twitter:description" content="Free Spain ITP calculator. Pick your autonomous community and purchase price to estimate 2026 property transfer tax, plus notary, registry and legal fees. Every rate sourced and dated.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6286935824893984" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="shell head-in">
+    <a class="logo" href="/">
+      <img class="logo-mark" src="/assets/logo.svg" alt="" width="30" height="30">
+      <span class="logo-txt">Verified<br><em>Expat Suppliers</em></span>
+    </a>
+    <nav class="head-nav">
+      <a href="/#countries" class="nav-hide">Countries</a>
+      <a href="/spain/itp-calculator/" class="nav-hide">Calculators</a>
+      <a href="/for-suppliers/" class="btn btn-primary btn-sm">Get listed</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="shell hero-in">
+    <span class="pill pill-open"><span class="dot"></span>Free calculator &middot; updated 8 August 2026</span>
+    <h1>What will <span class="accent">ITP</span> cost you in Spain?</h1>
+    <p class="hero-lede">Spain's property transfer tax is set by region, and the spread is enormous &mdash; the same &euro;400,000 flat costs you &euro;24,000 in Madrid and &euro;40,000 in Catalunya. Pick your region, enter the price, and see the whole cost stack.</p>
+  </div>
+</section>
+
+<div class="shell-n section">
+  <div class="crumb"><a href="/">Home</a> &rsaquo; <a href="/spain/">Spain</a> &rsaquo; ITP calculator</div>
+
+  <div class="calc">
+    <div class="calc-field">
+      <label class="calc-label" for="region">Where is the property?</label>
+      <select class="input" id="region"><option value="andalucia">Andalucía</option><option value="aragon">Aragón</option><option value="asturias">Asturias</option><option value="baleares">Illes Balears</option><option value="canarias">Canarias</option><option value="cantabria">Cantabria</option><option value="castillaleon">Castilla y León</option><option value="castillamancha">Castilla-La Mancha</option><option value="cataluna">Catalunya</option><option value="extremadura">Extremadura</option><option value="galicia">Galicia</option><option value="madrid">Madrid</option><option value="murcia">Murcia</option><option value="navarra">Navarra</option><option value="rioja">La Rioja</option><option value="valenciana">Comunitat Valenciana</option><option value="euskadi">Euskadi / País Vasco</option></select>
+      <p class="calc-hint" id="regionNote"></p>
+    </div>
+    <div class="calc-field">
+      <label class="calc-label" for="price">Purchase price</label>
+      <div class="input-money"><span class="cur">&euro;</span>
+        <input class="input" id="price" type="number" inputmode="numeric" min="0" step="1000" value="350000">
+      </div>
+      <p class="calc-hint">Use the declared purchase price. Spanish regions can tax a higher <em>valor de referencia</em> if they consider the declared price below market &mdash; ask your lawyer to check it.</p>
+    </div>
+    <div class="calc-field">
+      <label class="calc-label" for="ptype">Property type</label>
+      <select class="input" id="ptype">
+        <option value="resale">Resale (ITP applies)</option>
+        <option value="new">New build (IVA + AJD instead of ITP)</option>
+      </select>
+    </div>
+    <button class="btn btn-primary btn-block" id="go" type="button">Calculate</button>
+
+    <div class="calc-out" id="out" hidden>
+      <div class="calc-headline">
+        <div class="k" id="taxName">Transfer tax (ITP)</div>
+        <div class="v" id="taxValue">&mdash;</div>
+        <div class="s" id="taxRate"></div>
+      </div>
+      <div class="calc-rows" id="rows"></div>
+      <p class="calc-note">An estimate from published rates, not a quote and not legal or tax advice. Fee ranges for notary, registry and lawyer are typical figures from our Spain guide, not your quote.</p>
+      <details class="calc-sources">
+        <summary>Where these figures come from &mdash; checked 8 August 2026</summary>
+        
+        <ul><li><a href="https://www.idealista.com/en/news/legal-advice-in-spain/2026/07/28/819047-property-transfer-tax-in-spain-2026-rates-by-autonomous-community" target="_blank" rel="noopener nofollow">idealista, "Property Transfer Tax in Spain 2026: ITP rates by autonomous community" (28 July 2026)</a></li><li><a href="https://www.hipotecas.me/itp/baleares" target="_blank" rel="noopener nofollow">Balearic band thresholds — Hipotecas.me, ITP Balears 2026</a></li><li><a href="https://www.rankia.com/blog/mejores-hipotecas/7380436-itp-cataluna" target="_blank" rel="noopener nofollow">Catalan progressive scale (Decret llei 5/2025, in force 27 June 2025) — Rankia, ITP Catalunya 2026</a></li><li><a href="/spain/#sources">Notary, registry and legal fee ranges — our own Spain guide, which lists its sources</a></li></ul>
+        <p style="margin-top:.7rem">Rates are set regionally or nationally and change, sometimes mid-year. If a figure here disagrees with the official authority, the official authority is right &mdash; and please <a href="mailto:shane@warrenbg.com?subject=Calculator%20correction">tell us</a> so we can fix it.</p>
+      </details>
+    </div>
+  </div>
+
+  <div class="prose" style="margin-top:2.5rem">
+    <h2 style="border-top:none;padding-top:0">Every region, side by side</h2>
+    <p>ITP (<em>Impuesto sobre Transmisiones Patrimoniales</em>) is the tax you pay on a <strong>resale</strong> home. It is set by each autonomous community, which is why the same purchase can cost tens of thousands more or less depending on which side of a regional border it sits.</p>
+    <table>
+      <tr><th>Region</th><th>2026 rate for a resale home</th></tr>
+      <tr><td><strong>Andalucía</strong></td><td>6% to &euro;150,000; 7% above &euro;150,000</td></tr><tr><td><strong>Aragón</strong></td><td>8%&ndash;10% <em>(bands not published here)</em></td></tr><tr><td><strong>Asturias</strong></td><td>8% to &euro;300,000; 9% to &euro;500,000; 10% above &euro;500,000</td></tr><tr><td><strong>Illes Balears</strong></td><td>8% on &euro;0&ndash;&euro;400,000; 9% on &euro;400,000&ndash;&euro;600,000; 10% on &euro;600,000&ndash;&euro;1,000,000; 12% on &euro;1,000,000&ndash;&euro;2,000,000; 13% above &euro;2,000,000 <em>(marginal)</em></td></tr><tr><td><strong>Canarias</strong></td><td>6.5%</td></tr><tr><td><strong>Cantabria</strong></td><td>9%</td></tr><tr><td><strong>Castilla y León</strong></td><td>8% to &euro;250,000; 10% above &euro;250,000</td></tr><tr><td><strong>Castilla-La Mancha</strong></td><td>9%</td></tr><tr><td><strong>Catalunya</strong></td><td>10% on &euro;0&ndash;&euro;600,000; 11% on &euro;600,000&ndash;&euro;900,000; 12% on &euro;900,000&ndash;&euro;1,500,000; 13% above &euro;1,500,000 <em>(marginal)</em></td></tr><tr><td><strong>Extremadura</strong></td><td>8%&ndash;11% <em>(bands not published here)</em></td></tr><tr><td><strong>Galicia</strong></td><td>8%</td></tr><tr><td><strong>Madrid</strong></td><td>6%</td></tr><tr><td><strong>Murcia</strong></td><td>8%</td></tr><tr><td><strong>Navarra</strong></td><td>6%</td></tr><tr><td><strong>La Rioja</strong></td><td>7%</td></tr><tr><td><strong>Comunitat Valenciana</strong></td><td>9% to &euro;1,000,000; 11% above &euro;1,000,000</td></tr><tr><td><strong>Euskadi / País Vasco</strong></td><td>4%</td></tr>
+    </table>
+    <p class="legal-line">General guidance, not legal or tax advice &mdash; sources above.</p>
+
+    <h2>Two things that catch foreign buyers out</h2>
+    <h3>The <em>valor de referencia</em> can be higher than what you paid</h3>
+    <p>Since 2022 the tax base is the higher of the declared price and the cadastral reference value. If the reference value is above your price, you are taxed on the reference value. Your lawyer can check it before you sign, and it can be appealed &mdash; but not comfortably, after the fact.</p>
+    <h3>New builds are not cheaper, just taxed differently</h3>
+    <p>A new build pays 10% IVA plus AJD stamp duty of roughly 0.75%&ndash;1.5% depending on region, instead of ITP. In a low-ITP region like Madrid that makes a new build noticeably more expensive in tax; in Catalunya or the Balearics it can be the other way round.</p>
+
+    <h2>What else is in the cost stack</h2>
+    <p>Budget <strong>10&ndash;15% on top of the price</strong> in total. Beyond the transfer tax that means the notary (&euro;600&ndash;&euro;1,200, set by state tariff), the Land Registry (&euro;400&ndash;&euro;1,000+), and an independent lawyer at around 1% plus 21% IVA. Read the <a href="/spain/">full Spain guide</a> for the annual costs that follow &mdash; particularly <em>Modelo 210</em>, the non-resident tax you owe even when the property sits empty.</p>
+  </div>
+</div>
+
+<div class="shell-n" style="padding-bottom:3rem">
+  <div class="callout callout-clay">
+    <p><strong>Need a lawyer in Spain who does this every week?</strong> We are opening a verified directory of firms serving foreign buyers &mdash; identity checked against the Registro Mercantil and the Colegio de Abogados. <a href="/spain/">See the Spain page</a>.</p>
+  </div>
+</div>
+
+
+<section class="band">
+  <div class="shell band-in">
+    <span class="pill pill-open"><span class="dot"></span>Applications open</span>
+    <h2>Serving expats in Spain, Portugal, Mexico or Costa Rica?</h2>
+    <p>We are opening the verified network across legal, accounting and tax, real estate, healthcare, relocation, insurance and banking. Identity checked against the official register for your profession, written consent required, and paid placement disclosed on every card.</p>
+    <div class="hero-ctas" style="justify-content:center">
+      <a class="btn btn-primary" href="/for-suppliers/">What we check, and how to apply</a>
+      <a class="btn btn-light" href="/pricing/">See the rates</a>
+    </div>
+  </div>
+</section>
+
+<script>
+const REGIONS = [{"id": "andalucia", "name": "Andaluc\u00eda", "type": "tiered", "bands": [[150000, 6], [null, 7]], "note": "7% is the general rate; 6% applies where the property value is under \u20ac150,000."}, {"id": "aragon", "name": "Arag\u00f3n", "type": "range", "min": 8, "max": 10, "note": "Arag\u00f3n uses a progressive scale between 8% and 10%. We could not source the exact band thresholds to the standard we hold ourselves to, so we show the range rather than compute a number we cannot stand behind. Confirm with the Arag\u00f3n tax authority."}, {"id": "asturias", "name": "Asturias", "type": "tiered", "bands": [[300000, 8], [500000, 9], [null, 10]]}, {"id": "baleares", "name": "Illes Balears", "type": "progressive", "bands": [[400000, 8], [600000, 9], [1000000, 10], [2000000, 12], [null, 13]], "note": "Marginal bands: each slice of the price is taxed at its own rate, so the effective rate is always lower than the top band."}, {"id": "canarias", "name": "Canarias", "type": "flat", "rate": 6.5, "note": "6.5% general. A reduced 5% can apply to a main home under \u20ac200,000."}, {"id": "cantabria", "name": "Cantabria", "type": "flat", "rate": 9, "note": "9% general. A reduced 7% can apply to a main home under \u20ac200,000."}, {"id": "castillaleon", "name": "Castilla y Le\u00f3n", "type": "tiered", "bands": [[250000, 8], [null, 10]]}, {"id": "castillamancha", "name": "Castilla-La Mancha", "type": "flat", "rate": 9, "note": "9% general. A reduced 6% can apply to a first main home under \u20ac180,000."}, {"id": "cataluna", "name": "Catalunya", "type": "progressive", "bands": [[600000, 10], [900000, 11], [1500000, 12], [null, 13]], "note": "Marginal scale in force since 27 June 2025 (Decret llei 5/2025). A separate single 20% rate applies to large property holders."}, {"id": "extremadura", "name": "Extremadura", "type": "range", "min": 8, "max": 11, "note": "Extremadura uses a progressive scale between 8% and 11%. We could not source the exact band thresholds to our standard, so we show the range rather than a figure we cannot evidence."}, {"id": "galicia", "name": "Galicia", "type": "flat", "rate": 8, "note": "8% general. 7% can apply where the property will be your main home."}, {"id": "madrid", "name": "Madrid", "type": "flat", "rate": 6, "note": "6% general \u2014 among the lowest in Spain. 4% can apply to a main home for a large family."}, {"id": "murcia", "name": "Murcia", "type": "flat", "rate": 8}, {"id": "navarra", "name": "Navarra", "type": "flat", "rate": 6, "note": "6% general. A reduced 5% can apply to a main home under \u20ac180,304 for families with two or more children."}, {"id": "rioja", "name": "La Rioja", "type": "flat", "rate": 7}, {"id": "valenciana", "name": "Comunitat Valenciana", "type": "tiered", "bands": [[1000000, 9], [null, 11]], "note": "Cut from 10% to 9% during 2026; 11% applies above \u20ac1,000,000."}, {"id": "euskadi", "name": "Euskadi / Pa\u00eds Vasco", "type": "flat", "rate": 4, "note": "4% on housing transfers. The 7% general rate applies to property that is not housing."}];
+const fmt = n => '\u20ac' + Math.round(n).toLocaleString('en-GB');
+const el = id => document.getElementById(id);
+
+function regionById(id) { return REGIONS.find(r => r.id === id); }
+
+function computeITP(r, price) {
+  if (r.type === 'flat') return { tax: price * r.rate / 100, label: r.rate + '%', exact: true };
+  if (r.type === 'tiered') {
+    for (const [upTo, rate] of r.bands) {
+      if (upTo === null || price <= upTo) return { tax: price * rate / 100, label: rate + '%', exact: true };
+    }
+  }
+  if (r.type === 'progressive') {
+    let tax = 0, prev = 0;
+    for (const [upTo, rate] of r.bands) {
+      const cap = (upTo === null) ? price : Math.min(price, upTo);
+      if (cap > prev) tax += (cap - prev) * rate / 100;
+      prev = cap;
+      if (upTo !== null && price <= upTo) break;
+    }
+    return { tax, label: (tax / price * 100).toFixed(2) + '% effective', exact: true };
+  }
+  return { tax: null, lo: price * r.min / 100, hi: price * r.max / 100,
+            label: r.min + '%\u2013' + r.max + '%', exact: false };
+}
+
+function showNote() {
+  const r = regionById(el('region').value);
+  el('regionNote').textContent = r.note || '';
+}
+
+function run() {
+  const r = regionById(el('region').value);
+  const price = Math.max(0, parseFloat(el('price').value) || 0);
+  const isNew = el('ptype').value === 'new';
+  const rows = [];
+  let headline, sub, name;
+
+  if (isNew) {
+    const iva = price * 0.10, ajdLo = price * 0.0075, ajdHi = price * 0.015;
+    name = 'IVA + AJD (new build)';
+    headline = fmt(iva + ajdLo) + ' \u2013 ' + fmt(iva + ajdHi);
+    sub = '10% IVA plus AJD stamp duty of 0.75%\u20131.5%, which varies by region';
+    rows.push(['IVA at 10%', fmt(iva)]);
+    rows.push(['AJD stamp duty (0.75%\u20131.5%)', fmt(ajdLo) + ' \u2013 ' + fmt(ajdHi)]);
+  } else {
+    const res = computeITP(r, price);
+    name = 'Transfer tax (ITP) in ' + r.name;
+    if (res.exact) { headline = fmt(res.tax); sub = res.label + ' on ' + fmt(price); rows.push(['ITP at ' + res.label, fmt(res.tax)]); }
+    else {
+      headline = fmt(res.lo) + ' \u2013 ' + fmt(res.hi);
+      sub = r.min + '%\u2013' + r.max + '% \u2014 we do not publish this region\u2019s exact bands';
+      rows.push(['ITP (' + res.label + ')', fmt(res.lo) + ' \u2013 ' + fmt(res.hi)]);
+    }
+  }
+
+  rows.push(['Notary (state tariff)', '\u20ac600 \u2013 \u20ac1,200']);
+  rows.push(['Land Registry', '\u20ac400 \u2013 \u20ac1,000']);
+  const lawLo = price * 0.01 * 1.21;
+  rows.push(['Independent lawyer (~1% + 21% IVA)', fmt(Math.max(lawLo, 1500))]);
+
+  const lo = price * 0.10, hi = price * 0.15;
+  el('taxName').textContent = name;
+  el('taxValue').textContent = headline;
+  el('taxRate').textContent = sub;
+  el('rows').innerHTML = rows.map((row, i) =>
+    '<div class="calc-row' + (i % 2 ? ' calc-row-alt' : '') + '"><span class="rk">' + row[0] + '</span><span class="rv">' + row[1] + '</span></div>'
+  ).join('') +
+    '<div class="calc-row calc-row-total"><span class="rk">Typical all-in budget (10\u201315% of price)</span><span class="rv">' + fmt(lo) + ' \u2013 ' + fmt(hi) + '</span></div>';
+  el('out').hidden = false;
+}
+
+el('region').addEventListener('change', () => { showNote(); if (!el('out').hidden) run(); });
+el('ptype').addEventListener('change', () => { if (!el('out').hidden) run(); });
+el('price').addEventListener('input', () => { if (!el('out').hidden) run(); });
+el('go').addEventListener('click', run);
+showNote();
+</script>
+
+<footer class="site-foot">
+  <div class="shell">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <h4>Verified Expat Suppliers</h4>
+        <p>A directory of identity-verified services for people moving to Spain, Portugal, Mexico and Costa Rica &mdash; with free, sourced country guides alongside it.</p>
+      </div>
+      <div>
+        <h4>Countries</h4>
+        <a href="/spain/">Spain</a>
+        <a href="/portugal/">Portugal</a>
+        <a href="/mexico/">Mexico</a>
+        <a href="/costa-rica/">Costa Rica</a>
+      </div>
+      <div>
+        <h4>Free calculators</h4>
+        <a href="/spain/itp-calculator/">Spain ITP calculator</a>
+        <a href="/portugal/imt-calculator/">Portugal IMT calculator</a>
+      </div>
+      <div>
+        <h4>Suppliers</h4>
+        <a href="/for-suppliers/">How verification works</a>
+        <a href="/pricing/">Listing rates</a>
+        <a href="mailto:shane@warrenbg.com?subject=Supplier%20listing">Apply by email</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="foot-small">
+      <p><strong style="color:#C3CDC7">What verified means here.</strong> We confirm that a business exists and that its details match the official public register for its profession &mdash; identity verification only. It is never an endorsement of the quality of anyone's work, and every listing card says so. We do not rate, rank or endorse anyone, we hold no review data and will never display a rating, and we take no commission or referral fee on any work that results. Listings are paid placements and are disclosed as such on the card.</p>
+      <p><strong style="color:#C3CDC7">Nothing here is legal, tax or immigration advice.</strong> The guides and calculators are general information. Rules and rates change, often annually. Confirm anything that will cost you money with the official authority or a qualified professional before you commit.</p>
+      <p><strong style="color:#C3CDC7">Corrections and removals.</strong> If something here is wrong or out of date, or you or your business are referred to anywhere on this site and you want that changed or removed, email <a href="mailto:shane@warrenbg.com?subject=verifiedexpatsuppliers.com%20correction%20or%20removal">shane@warrenbg.com</a> and we will action it &mdash; no questions asked.</p>
+      <p class="foot-base">&copy; 2026 VerifiedExpatSuppliers.com &mdash; a service of <a href="https://warrenbg.com">Warren Business Group</a>, a Wyoming LLC.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

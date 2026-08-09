@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Costa Rica">
+  <title>Costa Rica</title>
+  <desc>Original abstract illustration. No photograph, no third-party asset.</desc>
+  <defs>
+    <linearGradient id="sky-costa-rica" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DEEBDF"/><stop offset="1" stop-color="#BFD9C6"/>
+    </linearGradient>
+    <clipPath id="clip-costa-rica"><rect width="320" height="180"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip-costa-rica)">
+    <rect width="320" height="180" fill="url(#sky-costa-rica)"/>
+    <circle cx="256" cy="46" r="18" fill="#F6E3A6" opacity="0.75"/>
+    <path d="M92 128 158 44l66 84z" fill="#3F5D4B"/>
+    <path d="M158 44l24 30h-48z" fill="#2E4838"/>
+    <path d="M0 128h320v52H0z" fill="#2E5C86" opacity="0.22"/>
+    <path d="M0 140c30-10 50 10 80 0s50 10 80 0 50 10 80 0 50 10 80 2v38H0z" fill="#2E5C86" opacity="0.4"/>
+    <g stroke="#3F5D4B" stroke-width="5" stroke-linecap="round" fill="none">
+      <path d="M44 178V118"/>
+      <path d="M44 120c-16-14-32-14-40-4M44 120c16-14 32-14 40-4M44 126c-20-6-34 2-40 12M44 126c20-6 34 2 40 12"/>
+    </g>
+    <g stroke="#3F5D4B" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.75">
+      <path d="M288 178v-44"/>
+      <path d="M288 136c-12-10-24-10-30-3M288 136c12-10 24-10 30-3M288 142c-15-4-25 2-29 9M288 142c15-4 25 2 29 9"/>
+    </g>
+  </g>
+</svg>

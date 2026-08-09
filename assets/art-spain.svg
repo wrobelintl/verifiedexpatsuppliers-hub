@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Spain">
+  <title>Spain</title>
+  <desc>Original abstract illustration. No photograph, no third-party asset.</desc>
+  <defs>
+    <linearGradient id="sky-spain" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBE3C4"/><stop offset="1" stop-color="#F6C9A0"/>
+    </linearGradient>
+    <clipPath id="clip-spain"><rect width="320" height="180"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip-spain)">
+    <rect width="320" height="180" fill="url(#sky-spain)"/>
+    <circle cx="238" cy="58" r="26" fill="#F2C48A" opacity="0.85"/>
+    <path d="M0 132h320v48H0z" fill="#B4542E" opacity="0.16"/>
+    <g fill="#8C3F22" opacity="0.9">
+      <path d="M14 132V86a22 22 0 0 1 44 0v46H44V88a8 8 0 0 0-16 0v44z"/>
+      <path d="M72 132V86a22 22 0 0 1 44 0v46h-14V88a8 8 0 0 0-16 0v44z"/>
+      <path d="M130 132V86a22 22 0 0 1 44 0v46h-14V88a8 8 0 0 0-16 0v44z"/>
+      <path d="M188 132V86a22 22 0 0 1 44 0v46h-14V88a8 8 0 0 0-16 0v44z"/>
+      <path d="M246 132V86a22 22 0 0 1 44 0v46h-14V88a8 8 0 0 0-16 0v44z"/>
+    </g>
+    <rect x="8" y="126" width="304" height="8" rx="2" fill="#6E2F17"/>
+    <rect x="8" y="58" width="304" height="7" rx="2" fill="#8C3F22" opacity="0.55"/>
+  </g>
+</svg>

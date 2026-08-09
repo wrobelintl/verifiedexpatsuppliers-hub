@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Mexico">
+  <title>Mexico</title>
+  <desc>Original abstract illustration. No photograph, no third-party asset.</desc>
+  <defs>
+    <linearGradient id="sky-mexico" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBE7C7"/><stop offset="1" stop-color="#F4CFA2"/>
+    </linearGradient>
+    <clipPath id="clip-mexico"><rect width="320" height="180"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip-mexico)">
+    <rect width="320" height="180" fill="url(#sky-mexico)"/>
+    <circle cx="66" cy="52" r="20" fill="#F3D08A" opacity="0.8"/>
+    <path d="M0 128h320v52H0z" fill="#7A5230" opacity="0.2"/>
+    <g fill="#8A4B2A">
+      <path d="M112 128h140l-18-20h-104z"/>
+      <path d="M130 108h104l-16-20h-72z"/>
+      <path d="M146 88h72l-15-20h-42z"/>
+      <path d="M161 68h42l-13-16h-16z"/>
+      <path d="M172 128h20v-76h-20z" opacity="0.35"/>
+    </g>
+    <g stroke="#4E6B5A" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.95">
+      <path d="M50 176V126M50 176l-22-34M50 176l22-34M50 160l-30-20M50 160l30-20"/>
+    </g>
+    <rect x="0" y="172" width="320" height="8" fill="#6E4326" opacity="0.5"/>
+  </g>
+</svg>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="google-site-verification" content="yyzo3aQHIK1LxIy3PZMqnrf1hSeuXZPA-B-aoXvJIKo" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portugal IMT Calculator 2026 — Before and After the 1 September Change</title>
+  <meta name="description" content="Free Portugal IMT calculator showing the flat 7.5% non-resident rate from 1 September 2026 side by side with the old progressive scale. 2026 brackets, sourced and dated.">
+  <link rel="canonical" href="https://verifiedexpatsuppliers.com/portugal/imt-calculator/">
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#16211E">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Verified Expat Suppliers">
+  <meta property="og:title" content="Portugal IMT Calculator 2026 — Before and After the 1 September Change">
+  <meta property="og:description" content="Free Portugal IMT calculator showing the flat 7.5% non-resident rate from 1 September 2026 side by side with the old progressive scale. 2026 brackets, sourced and dated.">
+  <meta property="og:url" content="https://verifiedexpatsuppliers.com/portugal/imt-calculator/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portugal IMT Calculator 2026 — Before and After the 1 September Change">
+  <meta name="twitter:description" content="Free Portugal IMT calculator showing the flat 7.5% non-resident rate from 1 September 2026 side by side with the old progressive scale. 2026 brackets, sourced and dated.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6286935824893984" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="shell head-in">
+    <a class="logo" href="/">
+      <img class="logo-mark" src="/assets/logo.svg" alt="" width="30" height="30">
+      <span class="logo-txt">Verified<br><em>Expat Suppliers</em></span>
+    </a>
+    <nav class="head-nav">
+      <a href="/#countries" class="nav-hide">Countries</a>
+      <a href="/spain/itp-calculator/" class="nav-hide">Calculators</a>
+      <a href="/for-suppliers/" class="btn btn-primary btn-sm">Get listed</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="shell hero-in">
+    <span class="pill pill-open"><span class="dot"></span>Free calculator &middot; updated 8 August 2026</span>
+    <h1>Portugal <span class="accent">IMT</span>: what changes on 1 September 2026</h1>
+    <p class="hero-lede">From 1 September 2026 non-resident buyers pay a flat 7.5% IMT from the first euro, instead of the progressive scale. For most purchases that is a large increase, and almost nobody is showing you the two numbers side by side. Here they are.</p>
+  </div>
+</section>
+
+<div class="shell-n section">
+  <div class="crumb"><a href="/">Home</a> &rsaquo; <a href="/portugal/">Portugal</a> &rsaquo; IMT calculator</div>
+
+  <div class="calc">
+    <div class="calc-field">
+      <label class="calc-label" for="pprice">Purchase price</label>
+      <div class="input-money"><span class="cur">&euro;</span>
+        <input class="input" id="pprice" type="number" inputmode="numeric" min="0" step="1000" value="450000">
+      </div>
+      <p class="calc-hint">IMT is charged on the higher of the price and the <em>valor patrimonial tribut&aacute;rio</em> (the tax registry value). For most market purchases that is the price.</p>
+    </div>
+    <div class="calc-field">
+      <label class="calc-label" for="buyer">Who is buying?</label>
+      <select class="input" id="buyer">
+        <option value="nonres">A non-resident of Portugal</option>
+        <option value="hpp">A Portuguese tax resident &mdash; this will be their permanent home</option>
+        <option value="sec">A Portuguese tax resident &mdash; second home or investment</option>
+      </select>
+      <p class="calc-hint" id="buyerNote">Mainland Portugal rates. Madeira and the Azores use different brackets.</p>
+    </div>
+    <button class="btn btn-primary btn-block" id="pgo" type="button">Calculate</button>
+
+    <div class="calc-out" id="pout" hidden>
+      <div id="compareWrap" hidden>
+        <div class="compare">
+          <div class="compare-cell now">
+            <div class="ck">Deed signed before 1 Sep 2026</div>
+            <div class="cv" id="cBefore">&mdash;</div>
+            <div class="calc-hint" id="cBeforeRate"></div>
+          </div>
+          <div class="compare-cell after">
+            <div class="ck">Deed signed from 1 Sep 2026</div>
+            <div class="cv" id="cAfter">&mdash;</div>
+            <div class="calc-hint" id="cAfterRate"></div>
+          </div>
+        </div>
+        <div class="compare-delta" id="cDelta"></div>
+      </div>
+
+      <div class="calc-headline" id="singleHead" hidden>
+        <div class="k">IMT payable</div>
+        <div class="v" id="pTaxValue">&mdash;</div>
+        <div class="s" id="pTaxRate"></div>
+      </div>
+
+      <div class="calc-rows" id="prows"></div>
+      <p class="calc-note">An estimate from published brackets, not a quote and not legal or tax advice.</p>
+      <details class="calc-sources">
+        <summary>Where these figures come from &mdash; checked 8 August 2026</summary>
+        
+        <ul><li><a href="https://imtcalc.pt/en/imt-table" target="_blank" rel="noopener nofollow">2026 IMT bracket tables, mainland Portugal (Ofício Circulado 40129/2026, Autoridade Tributária) — reproduced by IMT Calculator Portugal</a></li><li><a href="https://imtcalc.pt/en/non-residents" target="_blank" rel="noopener nofollow">Flat 7.5% non-resident rate, in force 1 September 2026 (Decreto-Lei 97/2026, Construir Portugal package approved February 2026) — IMT Calculator Portugal, non-residents</a></li><li><a href="https://www.youroverseashome.com/portugal/articles/imt-tax-in-portugal-what-buyers-pay-in-2026/" target="_blank" rel="noopener nofollow">Corroboration of the non-resident change — Your Overseas Home, "IMT tax in Portugal: what buyers pay in 2026"</a></li><li><a href="/portugal/#sources">Our own Portugal guide, which lists its sources</a></li></ul>
+        <p style="margin-top:.7rem">Rates are set regionally or nationally and change, sometimes mid-year. If a figure here disagrees with the official authority, the official authority is right &mdash; and please <a href="mailto:shane@warrenbg.com?subject=Calculator%20correction">tell us</a> so we can fix it.</p>
+      </details>
+    </div>
+  </div>
+
+  <div class="prose" style="margin-top:2.5rem">
+    <h2 style="border-top:none;padding-top:0">What actually changed</h2>
+    <p>Portugal's parliament approved the <em>Construir Portugal</em> housing package in February 2026. Under Decreto-Lei 97/2026, from <strong>1 September 2026 a buyer who is not tax resident in Portugal pays a flat 7.5% IMT on residential property</strong> &mdash; from the first euro, on primary and secondary homes alike, with none of the usual progressive bands, reductions or exemptions.</p>
+    <p class="legal-line">General guidance, not legal or tax advice &mdash; sources above.</p>
+
+    <div class="callout callout-clay">
+      <p><strong>There is relief, and it is worth raising before you complete.</strong> You can apply to the tax authority to cancel the difference between the 7.5% paid and the standard progressive rates if you either become a Portuguese tax resident within two years of the purchase, or allocate the property to moderate-rent long-term housing. Both have conditions. Raise it with your lawyer <em>before</em> the deed, not after.</p>
+    </div>
+
+    <h2>The 2026 brackets, mainland Portugal</h2>
+    <p>IMT is worked out as <em>value &times; marginal rate &minus; the deductible</em>, not as a flat percentage. That is why the effective rate is always lower than the headline band.</p>
+    <h3>Permanent own residence (HPP)</h3>
+    <table><tr><th>Value</th><th>Rate</th><th>Deductible</th></tr><tr><td>&euro;0 &ndash; &euro;106,346</td><td>0%</td><td>&mdash;</td></tr><tr><td>&euro;106,346 &ndash; &euro;145,470</td><td>2%</td><td>&euro;2,126.92</td></tr><tr><td>&euro;145,470 &ndash; &euro;198,347</td><td>5%</td><td>&euro;6,491.02</td></tr><tr><td>&euro;198,347 &ndash; &euro;330,539</td><td>7%</td><td>&euro;10,457.96</td></tr><tr><td>&euro;330,539 &ndash; &euro;660,982</td><td>8%</td><td>&euro;13,763.35</td></tr><tr><td>&euro;660,982 &ndash; &euro;1,150,853</td><td>6%</td><td>&mdash;</td></tr><tr><td>Above &euro;1,150,853</td><td>7.5%</td><td>&mdash;</td></tr></table>
+    <h3>Second home or investment</h3>
+    <table><tr><th>Value</th><th>Rate</th><th>Deductible</th></tr><tr><td>&euro;0 &ndash; &euro;106,346</td><td>1%</td><td>&mdash;</td></tr><tr><td>&euro;106,346 &ndash; &euro;145,470</td><td>2%</td><td>&euro;1,063.46</td></tr><tr><td>&euro;145,470 &ndash; &euro;198,347</td><td>5%</td><td>&euro;5,427.56</td></tr><tr><td>&euro;198,347 &ndash; &euro;330,539</td><td>7%</td><td>&euro;9,394.50</td></tr><tr><td>&euro;330,539 &ndash; &euro;633,931</td><td>8%</td><td>&euro;12,699.89</td></tr><tr><td>&euro;633,931 &ndash; &euro;1,150,853</td><td>6%</td><td>&mdash;</td></tr><tr><td>Above &euro;1,150,853</td><td>7.5%</td><td>&mdash;</td></tr></table>
+    <p>The 2026 thresholds were uprated by 2% from 2025 under Of&iacute;cio Circulado 40129/2026.</p>
+
+    <h2>Don't forget stamp duty and the rest</h2>
+    <p>On top of IMT you pay <strong>Imposto do Selo</strong> (stamp duty) at 0.8% of the price, plus notary and land registry costs. The calculator includes all three. Read the <a href="/portugal/">full Portugal guide</a> for the professionals you need and what each one is actually for.</p>
+  </div>
+</div>
+
+
+<section class="band">
+  <div class="shell band-in">
+    <span class="pill pill-open"><span class="dot"></span>Applications open</span>
+    <h2>Serving expats in Spain, Portugal, Mexico or Costa Rica?</h2>
+    <p>We are opening the verified network across legal, accounting and tax, real estate, healthcare, relocation, insurance and banking. Identity checked against the official register for your profession, written consent required, and paid placement disclosed on every card.</p>
+    <div class="hero-ctas" style="justify-content:center">
+      <a class="btn btn-primary" href="/for-suppliers/">What we check, and how to apply</a>
+      <a class="btn btn-light" href="/pricing/">See the rates</a>
+    </div>
+  </div>
+</section>
+
+<script>
+const HPP = [[106346, 0, 0], [145470, 2, 2126.92], [198347, 5, 6491.02], [330539, 7, 10457.96], [660982, 8, 13763.35], [1150853, 6, null], [null, 7.5, null]];
+const SEC = [[106346, 1, 0], [145470, 2, 1063.46], [198347, 5, 5427.56], [330539, 7, 9394.5], [633931, 8, 12699.89], [1150853, 6, null], [null, 7.5, null]];
+const fmt = n => '\u20ac' + Math.round(n).toLocaleString('en-GB');
+const el = id => document.getElementById(id);
+
+function imtFrom(table, price) {
+  let prev = 0;
+  for (const [upTo, rate, ded] of table) {
+    if (upTo === null || price <= upTo) {
+      const tax = price * rate / 100 - (ded || 0);
+      return { tax: Math.max(0, tax), rate };
+    }
+    prev = upTo;
+  }
+  return { tax: 0, rate: 0 };
+}
+
+function prun() {
+  const price = Math.max(0, parseFloat(el('pprice').value) || 0);
+  const who = el('buyer').value;
+  const stamp = price * 0.008;
+  const rows = [];
+
+  if (who === 'nonres') {
+    const before = imtFrom(SEC, price);
+    const after = price * 0.075;
+    el('compareWrap').hidden = false;
+    el('singleHead').hidden = true;
+    el('cBefore').textContent = fmt(before.tax);
+    el('cBeforeRate').textContent = (price ? (before.tax / price * 100).toFixed(2) : '0') + '% effective \u2014 progressive scale';
+    el('cAfter').textContent = fmt(after);
+    el('cAfterRate').textContent = '7.50% flat \u2014 from the first euro';
+    const diff = after - before.tax;
+    el('cDelta').innerHTML = diff > 0
+      ? 'Completing on or after 1 September 2026 costs you <b>' + fmt(diff) + ' more</b> in IMT on this purchase.'
+      : (diff < 0
+         ? 'On this price the new flat rate is actually <b>' + fmt(-diff) + ' lower</b> than the old progressive scale.'
+         : 'On this price the two come out the same.');
+    rows.push(['IMT before 1 Sep 2026', fmt(before.tax)]);
+    rows.push(['IMT from 1 Sep 2026', fmt(after)]);
+  } else {
+    const t = imtFrom(who === 'hpp' ? HPP : SEC, price);
+    el('compareWrap').hidden = true;
+    el('singleHead').hidden = false;
+    el('pTaxValue').textContent = fmt(t.tax);
+    el('pTaxRate').textContent = (price ? (t.tax / price * 100).toFixed(2) : '0') + '% effective (' + t.rate + '% band)';
+    rows.push(['IMT (' + t.rate + '% band)', fmt(t.tax)]);
+  }
+
+  rows.push(['Imposto do Selo (stamp duty, 0.8%)', fmt(stamp)]);
+  rows.push(['Notary and land registry', '\u20ac1,000 \u2013 \u20ac1,500']);
+  el('prows').innerHTML = rows.map((r, i) =>
+    '<div class="calc-row' + (i % 2 ? ' calc-row-alt' : '') + '"><span class="rk">' + r[0] + '</span><span class="rv">' + r[1] + '</span></div>').join('');
+  el('pout').hidden = false;
+}
+
+el('buyer').addEventListener('change', () => {
+  el('buyerNote').textContent = el('buyer').value === 'nonres'
+    ? 'Mainland Portugal rates. The 1 September 2026 flat rate applies to non-residents on both primary and secondary homes.'
+    : 'Mainland Portugal rates. Madeira and the Azores use different brackets.';
+  if (!el('pout').hidden) prun();
+});
+el('pprice').addEventListener('input', () => { if (!el('pout').hidden) prun(); });
+el('pgo').addEventListener('click', prun);
+</script>
+
+<footer class="site-foot">
+  <div class="shell">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <h4>Verified Expat Suppliers</h4>
+        <p>A directory of identity-verified services for people moving to Spain, Portugal, Mexico and Costa Rica &mdash; with free, sourced country guides alongside it.</p>
+      </div>
+      <div>
+        <h4>Countries</h4>
+        <a href="/spain/">Spain</a>
+        <a href="/portugal/">Portugal</a>
+        <a href="/mexico/">Mexico</a>
+        <a href="/costa-rica/">Costa Rica</a>
+      </div>
+      <div>
+        <h4>Free calculators</h4>
+        <a href="/spain/itp-calculator/">Spain ITP calculator</a>
+        <a href="/portugal/imt-calculator/">Portugal IMT calculator</a>
+      </div>
+      <div>
+        <h4>Suppliers</h4>
+        <a href="/for-suppliers/">How verification works</a>
+        <a href="/pricing/">Listing rates</a>
+        <a href="mailto:shane@warrenbg.com?subject=Supplier%20listing">Apply by email</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="foot-small">
+      <p><strong style="color:#C3CDC7">What verified means here.</strong> We confirm that a business exists and that its details match the official public register for its profession &mdash; identity verification only. It is never an endorsement of the quality of anyone's work, and every listing card says so. We do not rate, rank or endorse anyone, we hold no review data and will never display a rating, and we take no commission or referral fee on any work that results. Listings are paid placements and are disclosed as such on the card.</p>
+      <p><strong style="color:#C3CDC7">Nothing here is legal, tax or immigration advice.</strong> The guides and calculators are general information. Rules and rates change, often annually. Confirm anything that will cost you money with the official authority or a qualified professional before you commit.</p>
+      <p><strong style="color:#C3CDC7">Corrections and removals.</strong> If something here is wrong or out of date, or you or your business are referred to anywhere on this site and you want that changed or removed, email <a href="mailto:shane@warrenbg.com?subject=verifiedexpatsuppliers.com%20correction%20or%20removal">shane@warrenbg.com</a> and we will action it &mdash; no questions asked.</p>
+      <p class="foot-base">&copy; 2026 VerifiedExpatSuppliers.com &mdash; a service of <a href="https://warrenbg.com">Warren Business Group</a>, a Wyoming LLC.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

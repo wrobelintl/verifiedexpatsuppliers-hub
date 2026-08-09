@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Portugal">
+  <title>Portugal</title>
+  <desc>Original abstract illustration. No photograph, no third-party asset.</desc>
+  <defs>
+    <linearGradient id="sky-portugal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DDEAF3"/><stop offset="1" stop-color="#BBD3E6"/>
+    </linearGradient>
+    <clipPath id="clip-portugal"><rect width="320" height="180"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip-portugal)">
+    <rect width="320" height="180" fill="url(#sky-portugal)"/>
+    <g opacity="0.5" fill="none" stroke="#2E5C86" stroke-width="2">
+      <path d="M20 26l16 16-16 16-16-16zM60 26l16 16-16 16-16-16zM100 26l16 16-16 16-16-16zM140 26l16 16-16 16-16-16zM180 26l16 16-16 16-16-16zM220 26l16 16-16 16-16-16zM260 26l16 16-16 16-16-16zM300 26l16 16-16 16-16-16z"/>
+      <path d="M40 58l16 16-16 16-16-16zM80 58l16 16-16 16-16-16zM120 58l16 16-16 16-16-16zM160 58l16 16-16 16-16-16zM200 58l16 16-16 16-16-16zM240 58l16 16-16 16-16-16zM280 58l16 16-16 16-16-16z"/>
+    </g>
+    <path d="M0 104h320v76H0z" fill="#2E5C86" opacity="0.2"/>
+    <path d="M0 112c26-9 42 9 68 0s42 9 68 0 42 9 68 0 42 9 68 0 42 9 48 4v64H0z" fill="#2E5C86" opacity="0.42"/>
+    <path d="M0 134c26-9 42 9 68 0s42 9 68 0 42 9 68 0 42 9 68 0 42 9 48 4v42H0z" fill="#1E4265" opacity="0.55"/>
+  </g>
+</svg>
