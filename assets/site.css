@@ -349,3 +349,15 @@ select.input { background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xm
 .calc-cta .k { font-size: .72rem; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; color: #E8A882; margin-bottom: .35rem; }
 .calc-cta .t { font-family: var(--serif); font-size: 1.24rem; color: #fff; margin-bottom: .3rem; }
 .calc-cta .d { font-size: .88rem; color: #BFC9C3; }
+
+/* ───────────────────────── free community listings ─────────────────────────
+   Visually distinct from paid supplier categories on purpose. These are never
+   sold, so they must never look like the ones that are. */
+.chip-free { color: var(--sage); background: rgba(120,200,150,.13); border-color: rgba(120,200,150,.34); }
+.chips-light .chip-free { color: var(--sage); background: var(--sage-soft); border-color: rgba(78,107,90,.3); }
+.free-band { background: var(--sage-soft); border: 1px solid rgba(78,107,90,.22); border-radius: var(--r); padding: 1.4rem; }
+@media (min-width: 700px) { .free-band { padding: 1.9rem; } }
+.free-tag { display: inline-flex; align-items: center; gap: .4rem; font-size: .7rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--sage); background: #fff; border: 1px solid rgba(78,107,90,.3); padding: .32rem .78rem; border-radius: 99px; margin-bottom: .8rem; }
+.free-band h3 { margin-bottom: .5rem; }
+.free-band p { margin-bottom: .8rem; }
+.free-band p:last-child { margin-bottom: 0; }

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="google-site-verification" content="yyzo3aQHIK1LxIy3PZMqnrf1hSeuXZPA-B-aoXvJIKo" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply for a Verified Listing — Supplier Application Form</title>
+  <meta name="description" content="Apply to be listed on the verified expat supplier directory. Tells you exactly which register we check for your category and country, previews your card as you type, and builds the application for you. No account needed.">
+  <link rel="canonical" href="https://verifiedexpatsuppliers.com/apply/">
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#16211E">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Verified Expat Suppliers">
+  <meta property="og:title" content="Apply for a Verified Listing — Supplier Application Form">
+  <meta property="og:description" content="Apply to be listed on the verified expat supplier directory. Tells you exactly which register we check for your category and country, previews your card as you type, and builds the application for you. No account needed.">
+  <meta property="og:url" content="https://verifiedexpatsuppliers.com/apply/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Apply for a Verified Listing — Supplier Application Form">
+  <meta name="twitter:description" content="Apply to be listed on the verified expat supplier directory. Tells you exactly which register we check for your category and country, previews your card as you type, and builds the application for you. No account needed.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6286935824893984" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="shell head-in">
+    <a class="logo" href="/">
+      <img class="logo-mark" src="/assets/logo.svg" alt="" width="30" height="30">
+      <span class="logo-txt">Verified<br><em>Expat Suppliers</em></span>
+    </a>
+    <nav class="head-nav">
+      <a href="/#countries" class="nav-hide">Countries</a>
+      <a href="/spain/itp-calculator/" class="nav-hide">Calculators</a>
+      <a href="/for-suppliers/" class="btn btn-primary btn-sm">Get listed</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="shell hero-in">
+    <span class="pill pill-open"><span class="dot"></span>Applications open</span>
+    <h1>Apply for a <span class="accent">verified listing</span></h1>
+    <p class="hero-lede">Fill this in and it builds your application for you. Nothing is sent anywhere from this page &mdash; it runs entirely in your browser, then hands you a finished email to send or paste. Five minutes, and you will see exactly what your card looks like as you type.</p>
+  </div>
+</section>
+
+<div class="shell-n section">
+  <div class="crumb"><a href="/">Home</a> &rsaquo; Apply</div>
+
+  <div class="callout">
+    <p><strong>Before you start, the honest version.</strong> Verification here means we confirm your business exists and your details match the official register for your profession. It is <strong>identity verification only</strong> and never an endorsement of your work &mdash; your card will say so in those words. Listings are paid placements and every card discloses it. We take no commission and never see your enquiries. <a href="/for-suppliers/">Full detail on what we check</a> &middot; <a href="/pricing/">Rates</a></p>
+  </div>
+
+  <form class="calc" id="applyForm" novalidate>
+    <h2 style="font-size:1.2rem;margin-bottom:.3rem">1. What you do, and where</h2>
+    <p class="calc-hint" style="margin-bottom:1.2rem">This decides which register we check you against.</p>
+
+    <div class="calc-field">
+      <label class="calc-label" for="f_cat">Category</label>
+      <select class="input" id="f_cat"><option value="legal" data-reg="legal" data-paid="1">Legal — abogados, advogados, conveyancing, immigration</option><option value="accounting" data-reg="company" data-paid="1">Accounting & tax — asesores fiscales, contabilistas, gestores</option><option value="realestate" data-reg="company" data-paid="1">Real estate — buyer’s agents, agencies, property finders</option><option value="construction" data-reg="construction" data-paid="1">Construction & trades — builders, reformas, architects, project managers</option><option value="health" data-reg="health" data-paid="1">Healthcare — clinics, dentists, GP practices</option><option value="relocation" data-reg="none" data-paid="1">Relocation — consultants, removals, visa and residency support</option><option value="insurance" data-reg="finance" data-paid="1">Insurance — brokers and agents</option><option value="banking" data-reg="finance" data-paid="1">Banking — mortgage brokers, currency specialists</option><option value="community" data-reg="none" data-paid="0">Community or faith group — FREE, never a paid listing</option></select>
+    </div>
+    <div class="calc-field">
+      <label class="calc-label" for="f_country">Country you operate in</label>
+      <select class="input" id="f_country"><option value="spain">Spain</option><option value="portugal">Portugal</option><option value="mexico">Mexico</option><option value="costa-rica">Costa Rica</option></select>
+      <p class="calc-hint">Applying in more than one country? Send one application per country &mdash; each is verified separately.</p>
+    </div>
+
+    <div class="callout callout-clay" id="regBox" style="margin-top:0">
+      <p style="margin-bottom:.3rem"><strong>What we will check for you:</strong></p>
+      <p id="regText" style="margin-bottom:0">&mdash;</p>
+    </div>
+
+    <div id="freeNotice" class="callout" hidden>
+      <p style="margin-bottom:0"><strong>This one is free.</strong> Community and faith groups are never charged, so skip anything below that does not apply &mdash; we mainly need the name, where you meet, and a contact. <a href="/community/">More on free community listings</a>.</p>
+    </div>
+
+    <h2 style="font-size:1.2rem;margin:2rem 0 .3rem">2. Who you are</h2>
+    <div class="calc-field">
+      <label class="calc-label" for="f_name">Registered business or group name <span style="color:var(--clay)">*</span></label>
+      <input class="input" id="f_name" type="text" placeholder="Exactly as it appears on the register">
+    </div>
+    <div class="calc-field" id="regNumField">
+      <label class="calc-label" for="f_regnum">Registration number <span style="color:var(--clay)">*</span></label>
+      <input class="input" id="f_regnum" type="text" placeholder="NIF / CIF / NIPC / RFC / C&eacute;dula jur&iacute;dica">
+      <p class="calc-hint" id="regNumHint">The company number for your country.</p>
+    </div>
+    <div class="calc-field" id="licField">
+      <label class="calc-label" for="f_licence">Professional licence or roll number</label>
+      <input class="input" id="f_licence" type="text" placeholder="e.g. Colegio de Abogados no. 12345, or IMPIC alvar&aacute; class 3">
+      <p class="calc-hint">Include the named individual it belongs to, if it is a personal registration. Leave blank if your activity is not separately regulated.</p>
+    </div>
+    <div class="calc-field">
+      <label class="calc-label" for="f_city">City, and the areas you serve <span style="color:var(--clay)">*</span></label>
+      <input class="input" id="f_city" type="text" placeholder="e.g. M&aacute;laga &mdash; serving the Costa del Sol and inland Andaluc&iacute;a">
+    </div>
+
+    <h2 style="font-size:1.2rem;margin:2rem 0 .3rem">3. What goes on your card</h2>
+    <div class="calc-field">
+      <label class="calc-label" for="f_web">Website <span style="color:var(--clay)">*</span></label>
+      <input class="input" id="f_web" type="text" placeholder="https://your-firm.com">
+      <p class="calc-hint">It must be live and its identity must match the business name. That is part of the check.</p>
+    </div>
+    <div class="calc-field">
+      <label class="calc-label" for="f_contact">Contact route to publish <span style="color:var(--clay)">*</span></label>
+      <input class="input" id="f_contact" type="text" placeholder="The email, phone or page you want enquiries to arrive at">
+      <p class="calc-hint">Enquiries go straight to you. We never collect, forward or see them.</p>
+    </div>
+    <div class="calc-field">
+      <label class="calc-label" for="f_blurb">Describe what you do &mdash; 40 words maximum <span style="color:var(--clay)">*</span></label>
+      <textarea class="input" id="f_blurb" rows="4" placeholder="Factual claims only. We will not publish &lsquo;best&rsquo;, &lsquo;leading&rsquo; or &lsquo;top-rated&rsquo; — not because we doubt you, but because we cannot check it."></textarea>
+      <p class="calc-hint"><span id="wc">0</span> / 40 words<span id="wcWarn" style="color:var(--clay);font-weight:600"></span></p>
+    </div>
+
+    <h2 style="font-size:1.2rem;margin:2rem 0 .3rem">4. How we reach you</h2>
+    <div class="calc-field">
+      <label class="calc-label" for="f_person">Your name <span style="color:var(--clay)">*</span></label>
+      <input class="input" id="f_person" type="text" placeholder="Who we should reply to">
+    </div>
+    <div class="calc-field">
+      <label class="calc-label" for="f_email">Your email <span style="color:var(--clay)">*</span></label>
+      <input class="input" id="f_email" type="email" placeholder="Not published unless you chose it above as your contact route">
+    </div>
+    <div class="calc-field">
+      <label class="calc-label" for="f_notes">Anything else</label>
+      <textarea class="input" id="f_notes" rows="2" placeholder="Optional. Questions, timing, anything we should know."></textarea>
+    </div>
+
+    <div class="calc-field" style="background:var(--paper-2);border:1px solid var(--line);border-radius:var(--r-sm);padding:1rem">
+      <label style="display:flex;gap:.7rem;align-items:flex-start;cursor:pointer;font-size:.9rem">
+        <input type="checkbox" id="f_consent" style="margin-top:.25rem;width:18px;height:18px;flex-shrink:0;accent-color:var(--clay)">
+        <span>I confirm I am authorised to apply for this business or group, and I consent to being listed if the checks pass. I understand I can have the listing removed at any time, without giving a reason. <span style="color:var(--clay)">*</span></span>
+      </label>
+    </div>
+
+    <p id="errBox" class="calc-hint" style="color:var(--clay);font-weight:600" hidden></p>
+
+    <div style="display:grid;gap:.7rem;margin-top:1.2rem">
+      <button class="btn btn-primary" id="btnCopy" type="button">Copy my application</button>
+      <a class="btn btn-outline" id="btnMail" href="#">Open it in my email app</a>
+    </div>
+    <p class="calc-hint" style="text-align:center;margin-top:.8rem">Either works. Copy is more reliable on long applications; the email button is quicker. Both send to <strong>shane@warrenbg.com</strong>.</p>
+  </form>
+
+  <h2 style="font-size:1.3rem;margin:2.75rem 0 .4rem">Your card, as you type</h2>
+  <p class="calc-hint" style="margin-bottom:1rem">This updates live. It is a preview of your own application, not a published listing &mdash; nothing appears on the site until the checks pass.</p>
+  <div class="sample-wrap">
+    <span class="sample-flag">Preview &mdash; not yet published</span>
+    <div class="supplier-card">
+      <div class="sc-top">
+        <div class="sc-avatar">Your<br>logo</div>
+        <div>
+          <div class="sc-name" id="pvName">Your firm here</div>
+          <div class="sc-where" id="pvWhere">Your city &middot; the areas you serve</div>
+        </div>
+      </div>
+      <p class="sc-blurb" id="pvBlurb">Your 40 words go here.</p>
+      <div class="sc-row"><span id="pvWeb">your-firm.com</span><span id="pvContact">Your contact route</span></div>
+      <span class="sc-verified" id="pvVerified">Identity verified against the register for your profession</span>
+      <span class="sc-disclosure" id="pvDisc">Listed supplier &mdash; paid placement, identity verified on [date] against [named register]. Identity verification only; this is not an endorsement of the quality of their work.</span>
+    </div>
+  </div>
+
+  <div class="prose" style="margin-top:2.5rem">
+    <h2 style="border-top:none;padding-top:0">What happens after you send it</h2>
+    <ol>
+      <li><strong>We reply to every application</strong>, including the ones we decline. Usually within a few working days.</li>
+      <li><strong>We run the check</strong> against the register named above and record the result with the date and the source URL.</li>
+      <li><strong>One of three outcomes.</strong> <em>Confirmed</em> &mdash; found, and the details match. <em>Partial</em> &mdash; some items confirmed, others not; we tell you which, and a partial result is disclosed on the listing. <em>Unconfirmed</em> &mdash; we could not find you or the details did not match, and there is no listing.</li>
+      <li><strong>You approve the wording</strong> before anything goes live.</li>
+      <li><strong>You pay after that</strong>, not before. There is no charge for applying and no charge if we decline.</li>
+    </ol>
+
+    <h2>Why we might decline</h2>
+    <ul>
+      <li>The business cannot be found on a public register we can check.</li>
+      <li>The description makes claims we cannot verify, and you would rather not change them.</li>
+      <li>Your model involves paying or receiving referral commissions &mdash; that conflicts with the no-commission position the whole directory rests on.</li>
+      <li>The work described is something we would not want to send a reader toward.</li>
+    </ul>
+    <p>A decline is not a judgement on your business. Most often it just means the register does not show what we need it to show.</p>
+  </div>
+</div>
+
+
+<section class="band">
+  <div class="shell band-in">
+    <span class="pill pill-open"><span class="dot"></span>Applications open</span>
+    <h2>Serving expats in Spain, Portugal, Mexico or Costa Rica?</h2>
+    <p>We are opening the verified network across legal, accounting and tax, real estate, healthcare, relocation, insurance and banking. Identity checked against the official register for your profession, written consent required, and paid placement disclosed on every card.</p>
+    <div class="hero-ctas" style="justify-content:center">
+      <a class="btn btn-primary" href="/for-suppliers/">What we check, and how to apply</a>
+      <a class="btn btn-light" href="/pricing/">See the rates</a>
+    </div>
+  </div>
+</section>
+
+<script>
+const REG = {"spain": {"company": "Registro Mercantil entry and NIF/CIF", "legal": "Registro Mercantil, plus the Colegio de Abogados roll number of a named lawyer", "construction": "Registro de Empresas Acreditadas (REA) for your autonomous community; for an architect or aparejador, the relevant Colegio", "health": "The practitioner\u2019s Colegio \u2014 Colegio de M\u00e9dicos or Colegio de Dentistas \u2014 plus the clinic\u2019s own registration", "finance": "The DGSFP register for insurance mediation, or Banco de Espa\u00f1a for credit intermediaries", "none": "Registro Mercantil entry and NIF/CIF (this activity is not separately regulated)"}, "portugal": {"company": "Registo Comercial (NIPC)", "legal": "Registo Comercial, plus the Ordem dos Advogados roll number of a named lawyer", "construction": "IMPIC alvar\u00e1 number and class (or certificado, for works under \u20ac40,000)", "health": "Ordem dos M\u00e9dicos or Ordem dos M\u00e9dicos Dentistas registration of a named practitioner, plus the clinic\u2019s registration", "finance": "ASF register for insurance mediation, or Banco de Portugal for credit intermediaries", "none": "Registo Comercial (NIPC). This activity is not separately regulated in Portugal"}, "mexico": {"company": "RFC registration", "legal": "RFC, plus the c\u00e9dula profesional of a named lawyer (publicly searchable via the SEP)", "construction": "C\u00e9dula profesional of the named architect or engineer, plus their Director Responsable de Obra registration with the state or municipality", "health": "C\u00e9dula profesional of a named practitioner, plus the clinic\u2019s COFEPRIS registration where applicable", "finance": "CNSF register for insurance intermediaries, or CNBV for financial intermediaries", "none": "RFC registration. This activity is not separately regulated in Mexico"}, "costa-rica": {"company": "C\u00e9dula jur\u00eddica via the Registro Nacional", "legal": "C\u00e9dula jur\u00eddica, plus the Colegio de Abogados y Abogadas registration of a named lawyer", "construction": "CFIA registration \u2014 Colegio Federado de Ingenieros y de Arquitectos \u2014 for the firm and at least one named professional", "health": "Colegio de M\u00e9dicos y Cirujanos or Colegio de Cirujanos Dentistas registration of a named practitioner", "finance": "SUGESE register for insurance intermediaries, or SUGEF for financial intermediaries", "none": "C\u00e9dula jur\u00eddica via the Registro Nacional. This activity is not separately regulated"}};
+const el = id => document.getElementById(id);
+const REGNUM_LABEL = { spain:'NIF / CIF', portugal:'NIPC', mexico:'RFC', 'costa-rica':'C\u00e9dula jur\u00eddica' };
+
+function catOpt() { return el('f_cat').selectedOptions[0]; }
+function isPaid() { return catOpt().dataset.paid === '1'; }
+
+function syncCategory() {
+  const fam = catOpt().dataset.reg;
+  const country = el('f_country').value;
+  el('regText').textContent = REG[country][fam];
+  el('regNumHint').textContent = 'For ' + el('f_country').selectedOptions[0].text + ', that is your ' + REGNUM_LABEL[country] + '.';
+  el('freeNotice').hidden = isPaid();
+  el('pvDisc').textContent = isPaid()
+    ? 'Listed supplier \u2014 paid placement, identity verified on [date] against [named register]. Identity verification only; this is not an endorsement of the quality of their work.'
+    : 'Community listing \u2014 free of charge, never a paid placement. Listed on [date]. We do not verify or endorse community groups.';
+  el('pvVerified').textContent = isPaid()
+    ? 'Identity verified against the register for your profession'
+    : 'Free community listing \u2014 no payment, no verification claimed';
+  el('regBox').hidden = !isPaid();
+  el('regNumField').hidden = !isPaid();
+  el('licField').hidden = !isPaid();
+  preview();
+}
+
+function words(s) { return s.trim() ? s.trim().split(/\s+/) : []; }
+
+function preview() {
+  const v = id => el(id).value.trim();
+  el('pvName').textContent = v('f_name') || 'Your firm here';
+  el('pvWhere').textContent = v('f_city') || 'Your city \u00b7 the areas you serve';
+  el('pvBlurb').textContent = v('f_blurb') || 'Your 40 words go here.';
+  el('pvWeb').textContent = v('f_web').replace(/^https?:\/\//, '') || 'your-firm.com';
+  el('pvContact').textContent = v('f_contact') || 'Your contact route';
+  const n = words(el('f_blurb').value).length;
+  el('wc').textContent = n;
+  el('wcWarn').textContent = n > 40 ? '  \u2014 ' + (n - 40) + ' over; we will ask you to trim it' : '';
+}
+
+function buildText() {
+  const v = id => el(id).value.trim();
+  const L = [];
+  L.push('SUPPLIER LISTING APPLICATION');
+  L.push('');
+  L.push('Category:            ' + catOpt().text);
+  L.push('Country:             ' + el('f_country').selectedOptions[0].text);
+  L.push('Paid or free:        ' + (isPaid() ? 'Paid listing' : 'FREE community listing'));
+  L.push('');
+  L.push('Business/group name: ' + v('f_name'));
+  if (isPaid()) {
+    L.push('Registration number: ' + v('f_regnum'));
+    L.push('Professional licence:' + (v('f_licence') ? ' ' + v('f_licence') : ' (none / not regulated)'));
+  }
+  L.push('City and areas:      ' + v('f_city'));
+  L.push('Website:             ' + v('f_web'));
+  L.push('Contact to publish:  ' + v('f_contact'));
+  L.push('');
+  L.push('Description (' + words(el('f_blurb').value).length + ' words):');
+  L.push(v('f_blurb'));
+  L.push('');
+  L.push('Contact person:      ' + v('f_person'));
+  L.push('Reply-to email:      ' + v('f_email'));
+  if (v('f_notes')) { L.push(''); L.push('Notes:'); L.push(v('f_notes')); }
+  L.push('');
+  L.push('Register you will check: ' + el('regText').textContent);
+  L.push('');
+  L.push('Consent: I am authorised to apply for this business or group and consent to');
+  L.push('being listed if the checks pass. I understand I can have the listing removed');
+  L.push('at any time without giving a reason.');
+  return L.join('\n');
+}
+
+function validate() {
+  const need = [['f_name','the registered name'], ['f_city','your city and areas'],
+                ['f_web','your website'], ['f_contact','a contact route to publish'],
+                ['f_blurb','a description'], ['f_person','your name'], ['f_email','your email']];
+  if (isPaid()) need.splice(1, 0, ['f_regnum','your registration number']);
+  const missing = need.filter(([id]) => !el(id).value.trim()).map(([, l]) => l);
+  if (!el('f_consent').checked) missing.push('the consent tick');
+  if (missing.length) {
+    el('errBox').hidden = false;
+    el('errBox').textContent = 'Still needed: ' + missing.join(', ') + '.';
+    return false;
+  }
+  el('errBox').hidden = true;
+  return true;
+}
+
+el('btnCopy').addEventListener('click', async () => {
+  if (!validate()) return;
+  const text = buildText();
+  try {
+    await navigator.clipboard.writeText(text);
+    el('btnCopy').textContent = 'Copied \u2014 now paste it into an email to shane@warrenbg.com';
+  } catch (e) {
+    el('errBox').hidden = false;
+    el('errBox').textContent = 'Your browser blocked the copy. Use the email button below instead.';
+  }
+});
+
+el('btnMail').addEventListener('click', e => {
+  if (!validate()) { e.preventDefault(); return; }
+  const subj = 'Supplier listing \u2014 ' + (el('f_name').value.trim() || '') + ' (' + el('f_country').selectedOptions[0].text + ')';
+  e.target.closest('a').href = 'mailto:shane@warrenbg.com?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(buildText());
+});
+
+['f_cat','f_country'].forEach(id => el(id).addEventListener('change', syncCategory));
+['f_name','f_city','f_web','f_contact','f_blurb'].forEach(id => el(id).addEventListener('input', preview));
+syncCategory();
+</script>
+
+<footer class="site-foot">
+  <div class="shell">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <h4>Verified Expat Suppliers</h4>
+        <p>A directory of identity-verified services for people moving to Spain, Portugal, Mexico and Costa Rica &mdash; with free, sourced country guides alongside it.</p>
+      </div>
+      <div>
+        <h4>Countries</h4>
+        <a href="/spain/">Spain</a>
+        <a href="/portugal/">Portugal</a>
+        <a href="/mexico/">Mexico</a>
+        <a href="/costa-rica/">Costa Rica</a>
+      </div>
+      <div>
+        <h4>Free calculators</h4>
+        <a href="/spain/itp-calculator/">Spain ITP calculator</a>
+        <a href="/portugal/imt-calculator/">Portugal IMT calculator</a>
+      </div>
+      <div>
+        <h4>Suppliers</h4>
+        <a href="/apply/">Apply for a listing</a>
+        <a href="/for-suppliers/">How verification works</a>
+        <a href="/pricing/">Listing rates</a>
+        <a href="/community/">Community &amp; faith &mdash; free</a>
+        <a href="mailto:shane@warrenbg.com?subject=Supplier%20listing">Apply by email</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="foot-small">
+      <p><strong style="color:#C3CDC7">What verified means here.</strong> We confirm that a business exists and that its details match the official public register for its profession &mdash; identity verification only. It is never an endorsement of the quality of anyone's work, and every listing card says so. We do not rate, rank or endorse anyone, we hold no review data and will never display a rating, and we take no commission or referral fee on any work that results. Listings are paid placements and are disclosed as such on the card.</p>
+      <p><strong style="color:#C3CDC7">Nothing here is legal, tax or immigration advice.</strong> The guides and calculators are general information. Rules and rates change, often annually. Confirm anything that will cost you money with the official authority or a qualified professional before you commit.</p>
+      <p><strong style="color:#C3CDC7">Corrections and removals.</strong> If something here is wrong or out of date, or you or your business are referred to anywhere on this site and you want that changed or removed, email <a href="mailto:shane@warrenbg.com?subject=verifiedexpatsuppliers.com%20correction%20or%20removal">shane@warrenbg.com</a> and we will action it &mdash; no questions asked.</p>
+      <p class="foot-base">&copy; 2026 VerifiedExpatSuppliers.com &mdash; a service of <a href="https://warrenbg.com">Warren Business Group</a>, a Wyoming LLC.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
